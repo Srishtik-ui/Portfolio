@@ -1,50 +1,71 @@
 # 🚀 Srishti Kumari - Data Science & Machine Learning Portfolio
 
-A modern, professional portfolio website showcasing data science projects, skills, and achievements. Built with clean HTML, CSS, and JavaScript for optimal performance and user experience.
+**Rose Gold & Black Premium Edition** - A luxury, elegant portfolio website showcasing data science projects, skills, and achievements. Built with a stunning rose gold and deep black color theme for a premium, Apple-inspired aesthetic.
 
 ## ✨ Features
 
-### 🎨 Design & UX
-- **Modern Dark Theme** with light mode toggle
-- **Responsive Design** - Perfect on all devices (mobile, tablet, desktop)
-- **Smooth Animations** - Fade-ins, scroll reveals, and interactive elements
-- **Gradient Accents** - Eye-catching purple/blue gradient design
-- **Professional Typography** - Poppins & Inter font families
+### 🎨 Design & UX - Rose Gold Theme
+- **Premium Rose Gold & Black Theme** - Luxury color palette (#C9747A rose gold, #0A0A0F deep black)
+- **Fully Responsive Design** - Perfect on all devices (mobile, tablet, desktop)
+- **Smooth Animations** - Typed.js typing effects, AOS scroll animations, and glowing effects
+- **Rose Gold Accents** - Gradient headings, buttons, skill bars, and card borders
+- **Elegant Typography** - Cormorant Garamond (headings) & Poppins (body) with wide letter spacing
 
 ### 🔥 Key Sections
-1. **Hero Section** - Dynamic typewriter effect with compelling tagline
-2. **About Me** - Engaging narrative with mission statement and statistics
-3. **Technical Skills** - Organized by proficiency level with animated progress bars
-4. **Featured Projects** - Detailed project showcases with methodology and results
-5. **Education** - Academic background with coursework and certifications
-6. **Achievements** - Extracurricular activities and 2025 goals
-7. **Technical Blog** - Articles demonstrating communication skills
-8. **Contact** - Multiple contact methods with functional form
+1. **Hero Section** - Typing animation with rose gold gradient name and floating tech icons with orbital animation
+2. **About Me** - Engaging narrative with rose gold bordered fun fact cards
+3. **Technical Skills** - Categorized skills with rose gold gradient progress bars
+4. **Featured Projects** - 3 ML projects with architecture breakdowns and clickable live demos
+   - Emotion Detection Web App (Streamlit)
+   - Car Sales Price Prediction (Gradio/HuggingFace)
+   - IRIS Predict Classification (Streamlit)
+5. **Achievements** - Rose gold trophy cards highlighting certifications and milestones
+   - Deloitte Australia Cyber Security Program (2024)
+   - Hacktoberfest 2024 - Level 4 Badge
+   - GirlScript Summer of Code 2025
+   - Access Denied Workshop
+6. **Contact** - Rose gold themed contact form with social links
 
 ### ⚡ Performance & Optimization
-- **Fast Load Time** - Optimized for under 3 seconds
+- **Single HTML File** - Everything embedded (CSS + JS) for easy deployment
+- **Fast Load Time** - Minimal dependencies, CDN-based libraries
 - **SEO Friendly** - Semantic HTML with proper meta tags
-- **Accessible** - WCAG compliant with keyboard navigation
+- **Accessible** - ARIA labels and keyboard navigation
 - **Cross-browser Compatible** - Works on all modern browsers
-- **Mobile First** - Responsive design approach
+- **Mobile First** - Fully responsive design
 
-### 🎯 Interactive Elements
-- Smooth scrolling navigation
-- Active section highlighting
-- Animated skill bars and progress indicators
-- Floating particles in hero section
-- Hover effects on cards and buttons
-- Mobile hamburger menu
-- Back to top button
-- Theme toggle (dark/light mode)
+### 🎯 Interactive Elements & Animations
+- **Typed.js** - Typing animation: Data Science Student, ML Engineer, Python Developer, Problem Solver, Open Source Contributor
+- **AOS Library** - Fade-in on scroll animations
+- **Rose Gold Glowing Border** - Pulsing animation on profile photo
+- **Card Hover Effects** - Lift up with rose gold shadow glow
+- **Smooth Navbar** - Becomes solid on scroll with backdrop blur
+- **Floating Icons** - Orbital animation around profile photo
+- **Skill Bar Animation** - Fills on scroll with rose gold gradient
+- **Back to Top Button** - Rose gold floating button
 
 ## 🛠️ Technologies Used
 
-- **HTML5** - Semantic markup
-- **CSS3** - Custom properties, Flexbox, Grid, animations
-- **JavaScript (ES6+)** - Modern vanilla JS
-- **Font Awesome** - Icons
-- **Google Fonts** - Poppins & Inter
+- **HTML5** - Single standalone file with embedded CSS and JavaScript
+- **CSS3** - Custom properties (rose gold theme), Flexbox, Grid, keyframe animations
+- **JavaScript (ES6+)** - Vanilla JS for interactions
+- **Typed.js** - Typing animation library
+- **AOS.js** - Animate On Scroll library
+- **Font Awesome 6.4** - Icon library
+- **Google Fonts** - Cormorant Garamond & Poppins
+
+## 🎨 Color Palette
+
+```css
+--bg-primary: #0A0A0F (Deep Black)
+--bg-secondary: #12121A (Rich Dark)
+--card-bg: #1A1A25 (Dark Purple-Black)
+--accent-primary: #C9747A (Rose Gold)
+--accent-secondary: #E8B4B8 (Soft Pink Gold)
+--text-primary: #F5F5F5 (Off White)
+--text-secondary: #B8B8C5 (Light Gray)
+--border-color: #2A2A3A
+```
 
 ## 📦 Project Structure
 

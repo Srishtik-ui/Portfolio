@@ -1,0 +1,12 @@
+{
+  "name": "srishti-portfolio-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd react-portfolio && npm run dev",
+    "build": "cd react-portfolio && npm run build",
+    "preview": "cd react-portfolio && npm run preview",
+    "install": "cd react-portfolio && npm install"
+  },
+  "description": "Workspace for Srishti Kumari's portfolio projects"
+}
