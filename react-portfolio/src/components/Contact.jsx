@@ -90,7 +90,7 @@ const Contact = () => {
 
   return (
     <section id="contact" ref={ref} className="py-20 bg-bg-secondary relative overflow-hidden">
-      <div className="absolute top-20 right-20 w-80 h-80 bg-sage-green/5 rounded-full blur-3xl"></div>
+      <div className="pointer-events-none absolute top-20 right-20 w-80 h-80 bg-sage-green/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div

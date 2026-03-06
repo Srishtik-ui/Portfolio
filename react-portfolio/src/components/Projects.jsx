@@ -31,8 +31,8 @@ const Projects = () => {
           description: "7 emotion categories (Happy, Sad, Angry, Neutral, Surprise, Fear, Disgust)"
         }
       ],
-      github: "https://github.com/Srishtik-ui/Emotion-Detection-Web-App",
-      liveDemo: "https://emotion-detection-app-srishti.streamlit.app/",
+      github: "https://github.com/Srishtik-ui/emotion-app",
+      liveDemo: "https://emotion-app-s34ugxdudmmdfkifxyhnuv.streamlit.app/",
       gradient: "from-sage-green to-accent-secondary"
     },
     {
@@ -58,8 +58,8 @@ const Projects = () => {
           description: "R² Score, RMSE, MAE metrics"
         }
       ],
-      github: "https://github.com/Srishtik-ui/Car-Sales-Price-Prediction",
-      liveDemo: "https://car-price-prediction-srishti.streamlit.app/",
+      github: "https://github.com/Srishtik-ui/Car_price_predictor",
+      liveDemo: "https://huggingface.co/spaces/Git-bash1706/car-sales",
       gradient: "from-accent-secondary to-sage-green"
     },
     {
@@ -85,8 +85,8 @@ const Projects = () => {
           description: "Accuracy, Confusion Matrix, Classification Report"
         }
       ],
-      github: "https://github.com/Srishtik-ui/IRIS-Predict",
-      liveDemo: "https://iris-predict-srishti.streamlit.app/",
+      github: "https://github.com/Srishtik-ui/iris_model",
+      liveDemo: "https://irismodel-byvkl2ukpu5vt4cynxerql.streamlit.app",
       gradient: "from-sage-green via-accent-secondary to-sage-green"
     }
   ]
