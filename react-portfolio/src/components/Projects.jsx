@@ -31,9 +31,9 @@ const Projects = () => {
           description: "7 emotion categories (Happy, Sad, Angry, Neutral, Surprise, Fear, Disgust)"
         }
       ],
-      github: "https://github.com/srishti717/Emotion-Detection-Web-App",
+      github: "https://github.com/Srishtik-ui/Emotion-Detection-Web-App",
       liveDemo: "https://emotion-detection-app-srishti.streamlit.app/",
-      gradient: "from-rose-gold to-accent-secondary"
+      gradient: "from-sage-green to-accent-secondary"
     },
     {
       title: "Car Sales Price Prediction",
@@ -58,9 +58,9 @@ const Projects = () => {
           description: "R² Score, RMSE, MAE metrics"
         }
       ],
-      github: "https://github.com/srishti717/Car-Sales-Price-Prediction",
+      github: "https://github.com/Srishtik-ui/Car-Sales-Price-Prediction",
       liveDemo: "https://car-price-prediction-srishti.streamlit.app/",
-      gradient: "from-accent-secondary to-rose-gold"
+      gradient: "from-accent-secondary to-sage-green"
     },
     {
       title: "IRIS Predict",
@@ -85,9 +85,9 @@ const Projects = () => {
           description: "Accuracy, Confusion Matrix, Classification Report"
         }
       ],
-      github: "https://github.com/srishti717/IRIS-Predict",
+      github: "https://github.com/Srishtik-ui/IRIS-Predict",
       liveDemo: "https://iris-predict-srishti.streamlit.app/",
-      gradient: "from-rose-gold via-accent-secondary to-rose-gold"
+      gradient: "from-sage-green via-accent-secondary to-sage-green"
     }
   ]
 
@@ -112,7 +112,7 @@ const Projects = () => {
 
   return (
     <section id="projects" ref={ref} className="py-20 bg-bg-secondary relative overflow-hidden">
-      <div className="absolute bottom-20 right-20 w-80 h-80 bg-rose-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-20 right-20 w-80 h-80 bg-sage-green/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -123,7 +123,7 @@ const Projects = () => {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-wide">
-              Featured <span className="text-gradient-rose">Projects</span>
+              Featured <span className="text-gradient-sage">Projects</span>
             </h2>
             <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
               Hands-on machine learning projects showcasing data science expertise and problem-solving skills
@@ -137,7 +137,7 @@ const Projects = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                className="bg-card-bg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-rose-gold/10 transition-all duration-300 border border-border-primary"
+                className="bg-card-bg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-sage-green/10 transition-all duration-300 border border-border-primary"
               >
                 {/* Top Gradient Border */}
                 <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
@@ -148,7 +148,7 @@ const Projects = () => {
                     <h3 className="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-2">
                       {project.title}
                     </h3>
-                    <p className="text-rose-gold-light font-semibold">{project.subtitle}</p>
+                    <p className="text-sage-light font-semibold">{project.subtitle}</p>
                   </div>
 
                   {/* Description */}
@@ -158,12 +158,12 @@ const Projects = () => {
 
                   {/* Tech Stack */}
                   <div className="mb-6">
-                    <h4 className="text-rose-gold font-semibold mb-3">Tech Stack:</h4>
+                    <h4 className="text-sage-green font-semibold mb-3">Tech Stack:</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech, techIndex) => (
                         <span
                           key={techIndex}
-                          className="px-3 py-1 bg-bg-primary rounded-full text-sm border border-rose-gold/30 text-text-primary"
+                          className="px-3 py-1 bg-bg-primary rounded-full text-sm border border-sage-green/30 text-text-primary"
                         >
                           {tech}
                         </span>
@@ -173,14 +173,14 @@ const Projects = () => {
 
                   {/* Architecture Flow */}
                   <div className="mb-6">
-                    <h4 className="text-rose-gold font-semibold mb-4">Architecture:</h4>
+                    <h4 className="text-sage-green font-semibold mb-4">Architecture:</h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                       {project.architecture.map((layer, layerIndex) => (
                         <div
                           key={layerIndex}
-                          className="bg-bg-secondary p-4 rounded-lg border border-rose-gold/20"
+                          className="bg-bg-secondary p-4 rounded-lg border border-sage-green/20"
                         >
-                          <div className="text-rose-gold font-semibold mb-2 text-sm">
+                          <div className="text-sage-green font-semibold mb-2 text-sm">
                             {layer.layer}
                           </div>
                           <div className="text-text-secondary text-xs">
@@ -197,7 +197,7 @@ const Projects = () => {
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-rose-gold to-accent-secondary rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300"
+                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-sage-green to-accent-secondary rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300"
                     >
                       <FaGithub className="text-xl" />
                       View Code
@@ -206,7 +206,7 @@ const Projects = () => {
                       href={project.liveDemo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-bg-primary border-2 border-rose-gold rounded-full text-rose-gold font-semibold hover:bg-rose-gold hover:text-white transition-all duration-300"
+                      className="flex items-center gap-2 px-6 py-3 bg-bg-primary border-2 border-sage-green rounded-full text-sage-green font-semibold hover:bg-sage-green hover:text-white transition-all duration-300"
                     >
                       <FaExternalLinkAlt className="text-lg" />
                       Live Demo
@@ -223,3 +223,7 @@ const Projects = () => {
 }
 
 export default Projects
+
+
+
+

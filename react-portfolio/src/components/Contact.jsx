@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane, FaHackerrank } from 'react-icons/fa'
 
 const Contact = () => {
   const ref = useRef(null)
@@ -42,23 +42,30 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-2xl" />,
       title: "Email",
-      value: "srishti717@gmail.com",
-      link: "mailto:srishti717@gmail.com",
-      color: "rose-gold"
+      value: "srishtik717@gmail.com",
+      link: "mailto:srishtik717@gmail.com",
+      color: "sage-green"
     },
     {
       icon: <FaGithub className="text-2xl" />,
       title: "GitHub",
-      value: "github.com/srishti717",
-      link: "https://github.com/srishti717",
+      value: "github.com/Srishtik-ui",
+      link: "https://github.com/Srishtik-ui",
       color: "accent-secondary"
     },
     {
       icon: <FaLinkedin className="text-2xl" />,
       title: "LinkedIn",
-      value: "linkedin.com/in/srishti-kumari",
-      link: "https://www.linkedin.com/in/srishti-kumari-894982289/",
-      color: "rose-gold"
+      value: "linkedin.com/in/srishti-kumari-60a8502a6",
+      link: "https://www.linkedin.com/in/srishti-kumari-60a8502a6/",
+      color: "sage-green"
+    },
+    {
+      icon: <FaHackerrank className="text-2xl" />,
+      title: "HackerRank",
+      value: "@srishtik2709",
+      link: "https://www.hackerrank.com/profile/srishtik2709",
+      color: "sage-green"
     }
   ]
 
@@ -83,7 +90,7 @@ const Contact = () => {
 
   return (
     <section id="contact" ref={ref} className="py-20 bg-bg-secondary relative overflow-hidden">
-      <div className="absolute top-20 right-20 w-80 h-80 bg-rose-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 right-20 w-80 h-80 bg-sage-green/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -94,7 +101,7 @@ const Contact = () => {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-wide">
-              Let's <span className="text-gradient-rose">Connect</span>
+              Let's <span className="text-gradient-sage">Connect</span>
             </h2>
             <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
               Whether you have a question, collaboration opportunity, or just want to say hi, I'd love to hear from you!
@@ -115,7 +122,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ x: 10, transition: { duration: 0.3 } }}
-                  className="flex items-center gap-4 bg-card-bg p-6 rounded-xl border border-border-primary hover:border-rose-gold/50 transition-all duration-300 group"
+                  className="flex items-center gap-4 bg-card-bg p-6 rounded-xl border border-border-primary hover:border-sage-green/50 transition-all duration-300 group"
                 >
                   <div className={`text-${info.color} group-hover:scale-110 transition-transform duration-300`}>
                     {info.icon}
@@ -130,15 +137,15 @@ const Contact = () => {
               {/* Additional Info */}
               <motion.div
                 variants={itemVariants}
-                className="bg-gradient-to-br from-rose-gold/10 to-accent-secondary/10 p-8 rounded-2xl border border-rose-gold/20 mt-8"
+                className="bg-gradient-to-br from-sage-green/10 to-accent-secondary/10 p-8 rounded-2xl border border-sage-green/20 mt-8"
               >
-                <h4 className="text-xl font-heading font-semibold text-rose-gold mb-4">
+                <h4 className="text-xl font-heading font-semibold text-sage-green mb-4">
                   Open to Opportunities
                 </h4>
                 <p className="text-text-secondary leading-relaxed">
-                  Currently seeking internship opportunities in <span className="text-rose-gold font-semibold">Machine Learning</span>, 
-                  <span className="text-rose-gold font-semibold"> Data Science</span>, and 
-                  <span className="text-rose-gold font-semibold"> AI Engineering</span>. 
+                  Currently seeking internship opportunities in <span className="text-sage-green font-semibold">Machine Learning</span>, 
+                  <span className="text-sage-green font-semibold"> Data Science</span>, and 
+                  <span className="text-sage-green font-semibold"> AI Engineering</span>. 
                   Available for freelance projects and open-source collaborations.
                 </p>
               </motion.div>
@@ -162,7 +169,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-card-bg border border-border-primary rounded-xl text-text-primary focus:border-rose-gold focus:outline-none focus:ring-2 focus:ring-rose-gold/20 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-card-bg border border-border-primary rounded-xl text-text-primary focus:border-sage-green focus:outline-none focus:ring-2 focus:ring-sage-green/20 transition-all duration-300"
                     placeholder="John Doe"
                   />
                 </div>
@@ -178,7 +185,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-card-bg border border-border-primary rounded-xl text-text-primary focus:border-rose-gold focus:outline-none focus:ring-2 focus:ring-rose-gold/20 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-card-bg border border-border-primary rounded-xl text-text-primary focus:border-sage-green focus:outline-none focus:ring-2 focus:ring-sage-green/20 transition-all duration-300"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -194,7 +201,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows="5"
-                    className="w-full px-4 py-3 bg-card-bg border border-border-primary rounded-xl text-text-primary focus:border-rose-gold focus:outline-none focus:ring-2 focus:ring-rose-gold/20 transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 bg-card-bg border border-border-primary rounded-xl text-text-primary focus:border-sage-green focus:outline-none focus:ring-2 focus:ring-sage-green/20 transition-all duration-300 resize-none"
                     placeholder="Tell me about your project or just say hi..."
                   ></textarea>
                 </div>
@@ -204,7 +211,7 @@ const Contact = () => {
                   disabled={isSubmitting}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-full px-8 py-4 bg-gradient-to-r from-rose-gold to-accent-secondary rounded-full text-white font-semibold text-lg flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-rose-gold/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-8 py-4 bg-gradient-to-r from-sage-green to-accent-secondary rounded-full text-white font-semibold text-lg flex items-center justify-center gap-3 hover:shadow-lg hover:shadow-sage-green/30 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubmitting ? (
                     <>
@@ -238,3 +245,7 @@ const Contact = () => {
 }
 
 export default Contact
+
+
+
+

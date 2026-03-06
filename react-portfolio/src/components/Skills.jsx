@@ -89,7 +89,7 @@ const Skills = () => {
 
   return (
     <section id="skills" ref={ref} className="py-20 bg-bg-primary relative overflow-hidden">
-      <div className="absolute top-20 left-20 w-80 h-80 bg-rose-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-20 left-20 w-80 h-80 bg-sage-green/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -100,7 +100,7 @@ const Skills = () => {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-wide">
-              Technical <span className="text-gradient-rose">Skills</span>
+              Technical <span className="text-gradient-sage">Skills</span>
             </h2>
             <p className="text-text-secondary mt-4">
               Organized by proficiency level and continuously expanding
@@ -115,7 +115,7 @@ const Skills = () => {
                 variants={itemVariants}
                 className="space-y-6"
               >
-                <h3 className="text-2xl font-heading font-semibold text-rose-gold flex items-center gap-3">
+                <h3 className="text-2xl font-heading font-semibold text-sage-green flex items-center gap-3">
                   <span>{category.icon}</span>
                   {category.title}
                 </h3>
@@ -126,11 +126,11 @@ const Skills = () => {
                       key={skillIndex}
                       variants={itemVariants}
                       whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                      className="bg-card-bg p-6 rounded-xl border-t-4 border-rose-gold hover:shadow-lg hover:shadow-rose-gold/20 transition-all duration-300"
+                      className="bg-card-bg p-6 rounded-xl border-t-4 border-sage-green hover:shadow-lg hover:shadow-sage-green/20 transition-all duration-300"
                     >
                       <div className="flex items-center justify-between mb-3">
                         <h4 className="text-text-primary font-semibold flex items-center gap-2">
-                          {skill.icon && <span className="text-rose-gold">{skill.icon}</span>}
+                          {skill.icon && <span className="text-sage-green">{skill.icon}</span>}
                           {skill.name}
                         </h4>
                       </div>
@@ -141,12 +141,12 @@ const Skills = () => {
                           initial={{ width: 0 }}
                           animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
                           transition={{ duration: 1, delay: catIndex * 0.2 + skillIndex * 0.1 }}
-                          className="h-full bg-gradient-to-r from-rose-gold to-rose-gold-light rounded-full"
+                          className="h-full bg-gradient-to-r from-sage-green to-sage-light rounded-full"
                         />
                       </div>
 
                       <div className="mt-2 text-right">
-                        <span className="text-rose-gold text-sm font-semibold">{skill.level}%</span>
+                        <span className="text-sage-green text-sm font-semibold">{skill.level}%</span>
                       </div>
                     </motion.div>
                   ))}
@@ -161,3 +161,7 @@ const Skills = () => {
 }
 
 export default Skills
+
+
+
+

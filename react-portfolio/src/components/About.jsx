@@ -52,7 +52,7 @@ const About = () => {
   return (
     <section id="about" ref={ref} className="py-20 bg-bg-secondary relative overflow-hidden">
       {/* Background Decoration */}
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-rose-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-sage-green/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -64,9 +64,9 @@ const About = () => {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-wide">
-              About <span className="text-gradient-rose">Me</span>
+              About <span className="text-gradient-sage">Me</span>
             </h2>
-            <p className="text-rose-gold italic text-lg mt-4 tracking-wide">
+            <p className="text-sage-green italic text-lg mt-4 tracking-wide">
               "In a world full of data, I choose to find the story."
             </p>
           </motion.div>
@@ -78,9 +78,9 @@ const About = () => {
               variants={itemVariants}
               className="relative"
             >
-              <div className="w-full max-w-md mx-auto rounded-2xl overflow-hidden border-2 border-rose-gold shadow-lg shadow-rose-gold/20">
+              <div className="w-full max-w-md mx-auto rounded-2xl overflow-hidden border-2 border-sage-green shadow-lg shadow-sage-green/20">
                 <img
-                  src="https://via.placeholder.com/500x500/1A1A25/C9747A?text=About"
+                  src="/pfp.jpeg"
                   alt="About Srishti"
                   className="w-full h-full object-cover"
                 />
@@ -122,10 +122,10 @@ const About = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -8, transition: { duration: 0.3 } }}
-                className="bg-card-bg p-6 rounded-xl border-t-4 border-rose-gold hover:shadow-lg hover:shadow-rose-gold/20 transition-all duration-300"
+                className="bg-card-bg p-6 rounded-xl border-t-4 border-sage-green hover:shadow-lg hover:shadow-sage-green/20 transition-all duration-300"
               >
-                <div className="text-rose-gold mb-4">{fact.icon}</div>
-                <h4 className="text-rose-gold font-semibold mb-2 tracking-wide">{fact.title}</h4>
+                <div className="text-sage-green mb-4">{fact.icon}</div>
+                <h4 className="text-sage-green font-semibold mb-2 tracking-wide">{fact.title}</h4>
                 <p className="text-text-secondary text-sm">{fact.description}</p>
               </motion.div>
             ))}
@@ -137,3 +137,7 @@ const About = () => {
 }
 
 export default About
+
+
+
+

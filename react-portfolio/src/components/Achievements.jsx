@@ -15,7 +15,7 @@ const Achievements = () => {
       date: "2024",
       description: "Completed a job simulation as a cyber security analyst at Deloitte. Responded to a cybersecurity incident through security analysis and escalation. Analyzed breach scenarios and provided appropriate responses.",
       skills: ["Cyber Security", "Incident Response", "Security Analysis"],
-      color: "rose-gold"
+      color: "sage-green"
     },
     {
       icon: <FaMedal className="text-4xl" />,
@@ -33,7 +33,7 @@ const Achievements = () => {
       date: "2025",
       description: "Selected as a participant in India's largest open-source program for students. Contributing to real-world projects under experienced mentors and building impactful solutions.",
       skills: ["Open Source", "Python", "Mentorship", "Problem Solving"],
-      color: "rose-gold"
+      color: "sage-green"
     },
     {
       icon: <FaCertificate className="text-4xl" />,
@@ -67,7 +67,7 @@ const Achievements = () => {
 
   return (
     <section id="achievements" ref={ref} className="py-20 bg-bg-primary relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-rose-gold/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-sage-green/5 rounded-full blur-3xl"></div>
 
       <div className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -78,7 +78,7 @@ const Achievements = () => {
           {/* Section Title */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-wide">
-              Achievements & <span className="text-gradient-rose">Certifications</span>
+              Achievements & <span className="text-gradient-sage">Certifications</span>
             </h2>
             <p className="text-text-secondary mt-4">
               Recognition of dedication to continuous learning and professional growth
@@ -92,7 +92,7 @@ const Achievements = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
-                className="bg-card-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:shadow-rose-gold/10 transition-all duration-300 border border-border-primary relative overflow-hidden"
+                className="bg-card-bg rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:shadow-sage-green/10 transition-all duration-300 border border-border-primary relative overflow-hidden"
               >
                 {/* Background Glow */}
                 <div className={`absolute -top-10 -right-10 w-40 h-40 bg-${achievement.color}/10 rounded-full blur-2xl`}></div>
@@ -146,20 +146,20 @@ const Achievements = () => {
             variants={itemVariants}
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
-            <div className="bg-card-bg rounded-xl p-6 text-center border border-rose-gold/20">
-              <div className="text-4xl font-bold text-rose-gold mb-2">4+</div>
+            <div className="bg-card-bg rounded-xl p-6 text-center border border-sage-green/20">
+              <div className="text-4xl font-bold text-sage-green mb-2">4+</div>
               <div className="text-text-secondary text-sm">Certifications</div>
             </div>
-            <div className="bg-card-bg rounded-xl p-6 text-center border border-rose-gold/20">
-              <div className="text-4xl font-bold text-rose-gold mb-2">10+</div>
+            <div className="bg-card-bg rounded-xl p-6 text-center border border-sage-green/20">
+              <div className="text-4xl font-bold text-sage-green mb-2">10+</div>
               <div className="text-text-secondary text-sm">Projects Completed</div>
             </div>
-            <div className="bg-card-bg rounded-xl p-6 text-center border border-rose-gold/20">
-              <div className="text-4xl font-bold text-rose-gold mb-2">50+</div>
+            <div className="bg-card-bg rounded-xl p-6 text-center border border-sage-green/20">
+              <div className="text-4xl font-bold text-sage-green mb-2">50+</div>
               <div className="text-text-secondary text-sm">GitHub Contributions</div>
             </div>
-            <div className="bg-card-bg rounded-xl p-6 text-center border border-rose-gold/20">
-              <div className="text-4xl font-bold text-rose-gold mb-2">2+</div>
+            <div className="bg-card-bg rounded-xl p-6 text-center border border-sage-green/20">
+              <div className="text-4xl font-bold text-sage-green mb-2">2+</div>
               <div className="text-text-secondary text-sm">Years Learning</div>
             </div>
           </motion.div>
@@ -170,3 +170,7 @@ const Achievements = () => {
 }
 
 export default Achievements
+
+
+
+

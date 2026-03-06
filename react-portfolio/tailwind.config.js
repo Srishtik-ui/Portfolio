@@ -7,14 +7,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        'bg-primary': '#0A0A0F',
-        'bg-secondary': '#12121A',
-        'card-bg': '#1A1A25',
-        'rose-gold': '#C9747A',
-        'rose-gold-light': '#E8B4B8',
-        'text-primary': '#F5F5F5',
-        'text-secondary': '#B8B8C5',
-        'border-color': '#2A2A3A',
+        'bg-primary': '#080608',
+        'bg-secondary': '#100D12',
+        'card-bg': '#141018',
+        'sage-green': '#B8860B',
+        'sage-light': '#E8D5B0',
+        'text-primary': '#FDF8F0',
+        'text-secondary': '#9B8B7A',
+        'border-color': '#2A2020',
       },
       fontFamily: {
         'heading': ['"Cormorant Garamond"', 'serif'],
