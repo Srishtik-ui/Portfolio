@@ -1,5 +1,6 @@
 {
+  "framework": null,
   "installCommand": "npm install --prefix react-portfolio",
-  "buildCommand": "npm run build",
+  "buildCommand": "npm run build --prefix react-portfolio",
   "outputDirectory": "react-portfolio/dist"
 }
