@@ -34,6 +34,15 @@ const Achievements = () => {
       description: "Recognized as a contributor in GirlScript Summer of Code 2026 for active open-source participation.",
       skills: ["Open Source", "Contribution", "Collaboration", "Problem Solving"],
       color: "sage-green"
+    },
+    {
+      icon: <FaTrophy className="text-4xl" />,
+      title: "Holopin x Hacktoberfest Level 1 Contributor",
+      organization: "Hacktoberfest / Holopin",
+      date: "2026",
+      description: "Earned Level 1 contributor status for Hacktoberfest participation and open-source engagement.",
+      skills: ["Open Source", "Hacktoberfest", "Contribution"],
+      color: "accent-secondary"
     }
   ]
 
@@ -138,7 +147,7 @@ const Achievements = () => {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6"
           >
             <div className="bg-card-bg rounded-xl p-6 text-center border border-sage-green/20">
-              <div className="text-4xl font-bold text-sage-green mb-2">3+</div>
+              <div className="text-4xl font-bold text-sage-green mb-2">4+</div>
               <div className="text-text-secondary text-sm">Certifications</div>
             </div>
             <div className="bg-card-bg rounded-xl p-6 text-center border border-sage-green/20">
