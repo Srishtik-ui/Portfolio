@@ -113,19 +113,6 @@ const Projects = () => {
       github: "https://github.com/Srishtik-ui/Loan_Prediction",
       liveDemo: "https://github.com/Srishtik-ui/Loan_Prediction",
       gradient: "from-sage-green to-accent-secondary"
-    },
-    {
-      title: "Srishti21",
-      subtitle: "Personal Projects & Portfolio",
-      description: "Collection of small projects, experiments, and portfolio code showcasing web and ML work.",
-      techStack: ["HTML", "CSS", "JavaScript", "Python"],
-      architecture: [
-        { layer: "Frontend", description: "Portfolio pages and visuals" },
-        { layer: "Projects", description: "Jupyter and demo apps" }
-      ],
-      github: "https://github.com/Srishtik-ui/Srishti21",
-      liveDemo: "https://github.com/Srishtik-ui/Srishti21",
-      gradient: "from-sage-green via-accent-secondary to-sage-green"
     }
   ]
 
