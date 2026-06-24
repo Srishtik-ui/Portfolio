@@ -63,32 +63,28 @@ const Projects = () => {
       gradient: "from-accent-secondary to-sage-green"
     },
     {
-      title: "IRIS Predict",
-      subtitle: "Classic ML Classification Project",
-      description: "A foundational machine learning project implementing multiple classification algorithms on the famous Iris dataset. Compares various models to identify the best performing algorithm.",
-      techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+      title: "Loan Prediction",
+      subtitle: "Loan Approval Prediction System",
+      description: "A machine learning project that predicts loan approval outcomes using feature engineering, SMOTE handling, and model evaluation.",
+      techStack: ["Python", "Pandas", "Scikit-learn", "Streamlit", "SMOTE"],
       architecture: [
         {
-          layer: "Data Analysis",
-          description: "EDA with statistical insights"
+          layer: "Data Preprocessing",
+          description: "Missing-value treatment, encoding, and imbalance handling"
         },
         {
-          layer: "Preprocessing",
-          description: "Data cleaning, normalization, train-test split"
+          layer: "Modeling",
+          description: "Train and compare classification models"
         },
         {
-          layer: "Model Selection",
-          description: "Logistic Regression, KNN, Decision Tree, Random Forest"
-        },
-        {
-          layer: "Performance",
-          description: "Accuracy, Confusion Matrix, Classification Report"
+          layer: "Deployment",
+          description: "Streamlit interface for real-time prediction"
         }
       ],
-      github: "https://github.com/Srishtik-ui/iris_model",
-      liveDemo: "https://irismodel-byvkl2ukpu5vt4cynxerql.streamlit.app",
+      github: "https://github.com/Srishtik-ui/Loan_Prediction",
+      liveDemo: "https://github.com/Srishtik-ui/Loan_Prediction",
       gradient: "from-sage-green via-accent-secondary to-sage-green"
-    }
+    },
     {
       title: "Fine-Tuning Qwen 3.0.6B",
       subtitle: "LLM Fine-Tuning (LoRA / PEFT)",
