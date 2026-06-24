@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-bg-primary text-text-primary font-body;
+  }
+}
+
+@layer utilities {
+  .text-gradient-sage {
+    @apply bg-gradient-to-r from-sage-green to-sage-light bg-clip-text text-transparent;
+  }
+  
+  .glow-sage {
+    box-shadow: 0 0 30px rgba(201, 169, 110, 0.3), inset 0 0 30px rgba(201, 169, 110, 0.1);
+  }
+  
+  .glow-sage-hover:hover {
+    box-shadow: 0 0 50px rgba(201, 169, 110, 0.5), inset 0 0 30px rgba(201, 169, 110, 0.2);
+  }
+  
+  .sage-border-top {
+    border-top: 3px solid #B8860B;
+  }
+}
+
+/* Custom Animations */
+@keyframes profileGlow {
+  0%, 100% {
+    box-shadow: 0 0 30px rgba(201, 169, 110, 0.3), inset 0 0 30px rgba(201, 169, 110, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 50px rgba(201, 169, 110, 0.5), inset 0 0 30px rgba(201, 169, 110, 0.2);
+  }
+}
+
+.animate-profile-glow {
+  animation: profileGlow 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
