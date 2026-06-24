@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'framer-motion'
 import { useRef, useState } from 'react'
-import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane, FaHackerrank } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin, FaPaperPlane, FaCode } from 'react-icons/fa'
 
 const Contact = () => {
   const ref = useRef(null)
@@ -61,10 +61,10 @@ const Contact = () => {
       color: "sage-green"
     },
     {
-      icon: <FaHackerrank className="text-2xl" />,
-      title: "HackerRank",
-      value: "@srishtik2709",
-      link: "https://www.hackerrank.com/profile/srishtik2709",
+      icon: <FaCode className="text-2xl" />,
+      title: "LeetCode",
+      value: "@Srishti64",
+      link: "https://leetcode.com/u/Srishti64/",
       color: "sage-green"
     }
   ]

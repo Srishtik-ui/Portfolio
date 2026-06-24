@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaHackerrank } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaEnvelope, FaHeart, FaCode } from 'react-icons/fa'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear()
@@ -16,9 +16,9 @@ const Footer = () => {
       label: "LinkedIn"
     },
     {
-      icon: <FaHackerrank className="text-xl" />,
-      url: "https://www.hackerrank.com/profile/srishtik2709",
-      label: "HackerRank"
+      icon: <FaCode className="text-xl" />,
+      url: "https://leetcode.com/u/Srishti64/",
+      label: "LeetCode"
     },
     {
       icon: <FaEnvelope className="text-xl" />,

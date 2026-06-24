@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
-import { FaGithub, FaLinkedin, FaGlobe, FaChartLine, FaBrain, FaCode, FaHackerrank } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaGlobe, FaChartLine, FaBrain, FaCode } from 'react-icons/fa'
 
 const Hero = () => {
   const containerVariants = {
@@ -133,12 +133,12 @@ const Hero = () => {
                 <FaGlobe size={20} />
               </a>
               <a
-                href="https://www.hackerrank.com/profile/srishtik2709"
+                href="https://leetcode.com/u/Srishti64/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 flex items-center justify-center border-2 border-sage-green rounded-full text-sage-green hover:bg-sage-green hover:text-bg-primary transition-all duration-300 hover:-translate-y-1"
               >
-                <FaHackerrank size={20} />
+                <FaCode size={20} />
               </a>
             </motion.div>
           </motion.div>
