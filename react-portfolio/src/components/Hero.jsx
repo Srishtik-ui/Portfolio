@@ -95,7 +95,7 @@ const Hero = () => {
                 View Projects
               </a>
               <a
-                href="https://drive.google.com/file/d/1lcG91oOWKbP3Goolu4d1v3KzxaHQrFst/view?usp=sharing"
+                href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-3 border-2 border-sage-green text-sage-green font-semibold rounded-full hover:bg-sage-green/10 transition-all duration-300 hover:-translate-y-1"
