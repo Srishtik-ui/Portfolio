@@ -89,6 +89,48 @@ const Projects = () => {
       liveDemo: "https://irismodel-byvkl2ukpu5vt4cynxerql.streamlit.app",
       gradient: "from-sage-green via-accent-secondary to-sage-green"
     }
+    {
+      title: "Fine-Tuning Qwen 3.0.6B",
+      subtitle: "LLM Fine-Tuning (LoRA / PEFT)",
+      description: "Parameter-efficient fine-tuning of Qwen 3.0.6B using LoRA to adapt the model for QA and summarization tasks.",
+      techStack: ["Python", "PyTorch", "Hugging Face", "LoRA", "PEFT"],
+      architecture: [
+        { layer: "Dataset", description: "Prepare HF dataset and prompts" },
+        { layer: "Tokenization", description: "Tokenize with chat template" },
+        { layer: "Fine-tuning", description: "LoRA adapters + PEFT" },
+        { layer: "Evaluation", description: "Qualitative and quantitative checks" }
+      ],
+      github: "https://github.com/Srishtik-ui/Fine_tuning_of_Qwen-Qwen3-0.6B_Model",
+      liveDemo: "https://github.com/Srishtik-ui/Fine_tuning_of_Qwen-Qwen3-0.6B_Model",
+      gradient: "from-accent-secondary to-sage-green"
+    },
+    {
+      title: "Loan Approval Prediction",
+      subtitle: "Loan Approval Prediction System",
+      description: "Built a loan approval model with data cleaning, feature engineering, SMOTE handling, and deployment via Streamlit.",
+      techStack: ["Python", "Pandas", "Scikit-learn", "Streamlit", "SMOTE"],
+      architecture: [
+        { layer: "Data Preprocessing", description: "Missing-value treatment and encoding" },
+        { layer: "Modeling", description: "Classifier selection and evaluation" },
+        { layer: "Deployment", description: "Streamlit app for real-time predictions" }
+      ],
+      github: "https://github.com/Srishtik-ui/Loan_Prediction",
+      liveDemo: "https://github.com/Srishtik-ui/Loan_Prediction",
+      gradient: "from-sage-green to-accent-secondary"
+    },
+    {
+      title: "Srishti21",
+      subtitle: "Personal Projects & Portfolio",
+      description: "Collection of small projects, experiments, and portfolio code showcasing web and ML work.",
+      techStack: ["HTML", "CSS", "JavaScript", "Python"],
+      architecture: [
+        { layer: "Frontend", description: "Portfolio pages and visuals" },
+        { layer: "Projects", description: "Jupyter and demo apps" }
+      ],
+      github: "https://github.com/Srishtik-ui/Srishti21",
+      liveDemo: "https://github.com/Srishtik-ui/Srishti21",
+      gradient: "from-sage-green via-accent-secondary to-sage-green"
+    }
   ]
 
   const containerVariants = {
