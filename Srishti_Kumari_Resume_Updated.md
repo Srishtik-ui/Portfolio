@@ -4,7 +4,7 @@ Kolkata, India | +91 9508462545 | srishtik717@gmail.com
 srishtik.me | LinkedIn | GitHub
 
 ## Summary
-Computer Science (Data Science) undergraduate with hands-on experience building and deploying 4+ machine learning applications, including NLP classification, regression modeling, and LLM fine-tuning, using Python, Scikit-learn, PyTorch, and Hugging Face. Experienced across the ML lifecycle: data cleaning, EDA, feature engineering, model evaluation, and production deployment via Streamlit and Hugging Face Spaces. Seeking a Data Science, Machine Learning, or AI Engineer role to apply deployment-focused ML skills.
+Fourth-year B.Tech student in **Computer Science and Engineering (Data Science)** at **Haldia Institute of Technology**, passionate about Data Science, Machine Learning, and AI. Skilled in **Python, SQL, Pandas, NumPy, Scikit-learn, Power BI, and Data Visualization**. Experienced in building end-to-end machine learning projects, data analysis, and predictive modeling. Currently strengthening my skills in **Data Structures & Algorithms** and developing scalable, data-driven solutions.
 
 ## Core Competencies
 Machine Learning | Deep Learning | NLP | LLM Fine-Tuning (LoRA/PEFT) | EDA | Feature Engineering | Regression | Classification | Model Evaluation | Python | SQL | Scikit-learn | PyTorch | Hugging Face
@@ -49,23 +49,11 @@ Live Demo: https://huggingface.co/spaces/Srishti-17/car-sales
 - Deployed the model to Hugging Face Spaces with a Gradio interface for live price estimation.
 
 ### Fine-Tuning Qwen 0.6B with LoRA | Python, PyTorch, Hugging Face Transformers, PEFT
-### Fine-Tuning Qwen 3.0.6B with LoRA | Python, PyTorch, Hugging Face Transformers, PEFT
-Repository: https://github.com/Srishtik-ui/Fine_tuning_of_Qwen-Qwen3-0.6B_Model
-- Fine-tuned the Qwen 3.0.6B LLM using LoRA (PEFT) for question-answering and summarization tasks.
+Repository: https://github.com/Srishtik-ui/fine-tuning-qwen-0.6B
+- Fine-tuned the Qwen 0.6B LLM using LoRA (PEFT) for question-answering and summarization tasks.
 - Prepared a public Hugging Face dataset, including tokenization and prompt formatting for the base model's chat template.
 - Updated only a small subset of model weights via parameter-efficient fine-tuning, reducing compute and memory use versus full fine-tuning.
 - Compared fine-tuned outputs against the base model to evaluate qualitative improvement on target tasks.
-
-### Loan Approval Prediction | Python, Pandas, Scikit-learn, Streamlit
-Repository: https://github.com/Srishtik-ui/Loan_Prediction
-- Built a loan approval model to predict application outcomes using feature engineering, missing-value treatment, and class-imbalance handling with SMOTE.
-- Evaluated multiple classifiers and selected the best-performing model via cross-validation and metric analysis.
-- Deployed the final model as a Streamlit app for real-time loan score estimation.
-
-### Srishti21 | Portfolio and Small Projects
-Repository: https://github.com/Srishtik-ui/Srishti21
-- Curated a collection of small projects, experiments, and portfolio code showcasing frontend work, data exploration notebooks, and lightweight ML demos.
-- Included reproducible Jupyter notebooks and demo apps to demonstrate implementation and deployment steps.
 
 ## Positions of Responsibility
 Public Relations Head - DSCH, Haldia Institute of Technology
