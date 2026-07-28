@@ -1,236 +1,104 @@
-import { motion } from 'framer-motion'
-import { TypeAnimation } from 'react-type-animation'
-import { FaGithub, FaLinkedin, FaGlobe, FaChartLine, FaBrain, FaCode } from 'react-icons/fa'
+import { FiFileText, FiLinkedin, FiGithub, FiMail } from 'react-icons/fi'
+import { SiPython, SiPytorch, SiScikitlearn, SiStreamlit } from 'react-icons/si'
 
-const Hero = () => {
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0.3,
-        staggerChildren: 0.2
-      }
-    }
-  }
-
-  const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1
-    }
-  }
-
+export default function Hero() {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      <div
-        className="pointer-events-none absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(180deg, rgba(10, 15, 35, 0.55) 0%, rgba(10, 15, 35, 0.75) 100%), url('/home-overlay.jpeg')",
-          opacity: 0.55
-        }}
-      ></div>
+    <section id="home" className="pt-12 pb-16">
+      <div className="container mx-auto max-w-3xl px-4 animate-fade-in-blur">
+        <img
+          src="/assets/pfp.jpeg"
+          alt="Srishti Kumari"
+          className="size-24 rounded-full object-cover border-2 border-neutral-200 dark:border-neutral-800 bg-yellow-400 dark:bg-yellow-300 shadow-md"
+          onError={(e) => {
+            e.target.src = 'https://ui-avatars.com/api/?name=Srishti+Kumari&background=eab308&color=fff'
+          }}
+        />
 
-      {/* Animated Background Blobs */}
-      <div className="pointer-events-none absolute top-10 right-10 w-96 h-96 bg-sage-green/10 rounded-full blur-3xl animate-float"></div>
-      <div className="pointer-events-none absolute bottom-10 left-10 w-80 h-80 bg-sage-light/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="mt-8 flex flex-col gap-2">
+          <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-50 leading-tight">
+            Hi, I'm Srishti Kumari — <span className="text-neutral-500 dark:text-neutral-400">Data Science &amp; ML Engineer</span>
+          </h1>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="space-y-6"
-          >
-            <motion.p
-              variants={itemVariants}
-              className="text-sage-green text-sm tracking-wider-3 uppercase"
-            >
-              Hello, I'm
-            </motion.p>
+          <div className="mt-4 flex flex-wrap items-center gap-x-1.5 gap-y-2.5 text-base md:text-lg text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            <span>Fourth-year B.Tech CSE (Data Science) student at Haldia Institute of Technology. I specialize in building end-to-end Machine Learning pipelines and intelligent applications using</span>
 
-            <motion.h1
-              variants={itemVariants}
-              className="text-5xl md:text-7xl font-heading font-bold tracking-wide text-gradient-sage"
-            >
-              Srishti Kumari
-            </motion.h1>
+            <a className="skill-pill-inline" href="https://www.python.org/" target="_blank" rel="noreferrer">
+              <SiPython className="size-4 text-[#3776AB]" />
+              <span>Python</span>
+            </a>
 
-            <motion.div variants={itemVariants} className="h-12">
-              <TypeAnimation
-                sequence={[
-                  'Data Science Student', 2000,
-                  'ML Engineer', 2000,
-                  'Python Developer', 2000,
-                  'Problem Solver', 2000,
-                  'Basketball Player', 2000
-                ]}
-                wrapper="span"
-                speed={50}
-                repeat={Infinity}
-                className="text-2xl md:text-3xl text-sage-green"
-              />
-            </motion.div>
+            <span>,</span>
 
-            <motion.p
-              variants={itemVariants}
-              className="text-text-secondary text-lg leading-relaxed max-w-xl"
-            >
-              A third-year undergraduate student in Computer Science and Engineering (Data Science) 
-              at Haldia Institute of Technology, India, passionate about turning raw data into meaningful insights.
-            </motion.p>
+            <a className="skill-pill-inline" href="https://pytorch.org/" target="_blank" rel="noreferrer">
+              <SiPytorch className="size-4 text-[#EE4C2C]" />
+              <span>PyTorch</span>
+            </a>
 
-            <motion.div
-              variants={itemVariants}
-              className="flex flex-wrap gap-4"
-            >
-              <a
-                href="#projects"
-                className="px-8 py-3 bg-gradient-to-r from-sage-green to-sage-light text-bg-primary font-semibold rounded-full hover:shadow-lg hover:shadow-sage-green/30 transition-all duration-300 hover:-translate-y-1"
-              >
-                View Projects
-              </a>
-              <a
-                href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-3 border-2 border-sage-green text-sage-green font-semibold rounded-full hover:bg-sage-green/10 transition-all duration-300 hover:-translate-y-1"
-              >
-                Download Resume
-              </a>
-            </motion.div>
+            <span>,</span>
 
-            <motion.div
-              variants={itemVariants}
-              className="flex gap-6 pt-4"
-            >
-              <a
-                href="https://github.com/Srishtik-ui"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center border-2 border-sage-green rounded-full text-sage-green hover:bg-sage-green hover:text-bg-primary transition-all duration-300 hover:-translate-y-1"
-              >
-                <FaGithub size={20} />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/srishti-kumari-60a8502a6/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center border-2 border-sage-green rounded-full text-sage-green hover:bg-sage-green hover:text-bg-primary transition-all duration-300 hover:-translate-y-1"
-              >
-                <FaLinkedin size={20} />
-              </a>
-              <a
-                href="https://srishtik.me"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center border-2 border-sage-green rounded-full text-sage-green hover:bg-sage-green hover:text-bg-primary transition-all duration-300 hover:-translate-y-1"
-              >
-                <FaGlobe size={20} />
-              </a>
-              <a
-                href="https://leetcode.com/u/Srishti64/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center border-2 border-sage-green rounded-full text-sage-green hover:bg-sage-green hover:text-bg-primary transition-all duration-300 hover:-translate-y-1"
-              >
-                <FaCode size={20} />
-              </a>
-            </motion.div>
-          </motion.div>
+            <a className="skill-pill-inline" href="https://scikit-learn.org/" target="_blank" rel="noreferrer">
+              <SiScikitlearn className="size-4 text-[#F7931E]" />
+              <span>Scikit-learn</span>
+            </a>
 
-          {/* Right Content - Profile Photo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5 }}
-            className="relative flex items-center justify-center"
-          >
-            <div className="relative">
-              <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-sage-green animate-profile-glow">
-                <img
-                  src="/pfp.jpeg"
-                  alt="Srishti Kumari"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <span>,</span>
 
-              {/* Floating Icons */}
-              <motion.div
-                animate={{
-                  y: [0, -20, 0],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: "easeInOut"
-                }}
-                className="absolute -top-4 -right-4 w-16 h-16 bg-card-bg border-2 border-sage-green rounded-full flex items-center justify-center"
-              >
-                <FaChartLine className="text-sage-green text-2xl" />
-              </motion.div>
+            <a className="skill-pill-inline" href="https://huggingface.co/" target="_blank" rel="noreferrer">
+              <svg className="size-4" viewBox="0 0 128 128"><path fill="#FFD21E" d="M64 12a52 52 0 100 104 52 52 0 000-104zm-18 42a8 8 0 110-16 8 8 0 010 16zm36 0a8 8 0 110-16 8 8 0 010 16zm-36 28c8 10 28 10 36 0"/></svg>
+              <span>Hugging Face</span>
+            </a>
 
-              <motion.div
-                animate={{
-                  y: [0, -15, 0],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 1
-                }}
-                className="absolute -bottom-8 -left-8 w-16 h-16 bg-card-bg border-2 border-sage-green rounded-full flex items-center justify-center"
-              >
-                <FaBrain className="text-sage-green text-2xl" />
-              </motion.div>
+            <span>, and deploying interactive AI tools with</span>
 
-              <motion.div
-                animate={{
-                  y: [0, -25, 0],
-                }}
-                transition={{
-                  duration: 3.5,
-                  repeat: Infinity,
-                  ease: "easeInOut",
-                  delay: 0.5
-                }}
-                className="absolute top-20 -left-12 w-16 h-16 bg-card-bg border-2 border-sage-green rounded-full flex items-center justify-center"
-              >
-                <FaCode className="text-sage-green text-2xl" />
-              </motion.div>
-            </div>
-          </motion.div>
-        </div>
-      </div>
+            <a className="skill-pill-inline" href="https://streamlit.io/" target="_blank" rel="noreferrer">
+              <SiStreamlit className="size-4 text-[#FF4B4B]" />
+              <span>Streamlit</span>
+            </a>
 
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.5 }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2"
-      >
-        <div className="flex flex-col items-center gap-2">
-          <div className="w-6 h-10 border-2 border-sage-green rounded-full flex justify-center">
-            <motion.div
-              animate={{ y: [0, 12, 0] }}
-              transition={{ duration: 1.5, repeat: Infinity }}
-              className="w-1.5 h-1.5 bg-sage-green rounded-full mt-2"
-            />
+            <span>.</span>
           </div>
         </div>
-      </motion.div>
+
+        <div className="mt-8 flex flex-wrap items-center gap-4">
+          <a
+            href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-md text-sm font-semibold border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all shadow-sm active:scale-95"
+          >
+            <FiFileText className="size-4" />
+            <span>Resume / CV</span>
+          </a>
+        </div>
+
+        <div className="mt-8 flex items-center gap-4">
+          <a
+            href="https://www.linkedin.com/in/srishti-kumari-60a8502a6/"
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors p-1"
+            aria-label="LinkedIn"
+          >
+            <FiLinkedin className="size-6" />
+          </a>
+          <a
+            href="https://github.com/Srishtik-ui"
+            target="_blank"
+            rel="noreferrer"
+            className="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors p-1"
+            aria-label="GitHub"
+          >
+            <FiGithub className="size-6" />
+          </a>
+          <a
+            href="mailto:srishtik717@gmail.com"
+            className="text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors p-1"
+            aria-label="Email"
+          >
+            <FiMail className="size-6" />
+          </a>
+        </div>
+      </div>
     </section>
   )
 }
-
-export default Hero
-
-
-
-

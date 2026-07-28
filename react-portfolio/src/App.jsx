@@ -1,23 +1,22 @@
-import { useState } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
-import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
-import Achievements from './components/Achievements'
+import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-bg-primary">
+    <div className="min-h-screen bg-bg-light dark:bg-bg-dark text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <Achievements />
-      <Contact />
+      <main>
+        <Hero />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </main>
       <Footer />
     </div>
   )

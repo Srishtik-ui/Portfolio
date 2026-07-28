@@ -1,80 +1,65 @@
 import { useState, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { FiSun, FiMoon } from 'react-icons/fi'
 
-const Navbar = () => {
-  const [scrolled, setScrolled] = useState(false)
+export default function Navbar() {
+  const [isDark, setIsDark] = useState(true)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50)
+    const savedTheme = localStorage.getItem('theme')
+    const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches
+    
+    if (savedTheme === 'light' || (!savedTheme && systemPrefersLight)) {
+      setIsDark(false)
+      document.documentElement.classList.remove('dark')
+    } else {
+      setIsDark(true)
+      document.documentElement.classList.add('dark')
     }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Achievements', href: '#achievements' },
-    { name: 'Contact', href: '#contact' },
-  ]
+  const toggleTheme = () => {
+    if (isDark) {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+      setIsDark(false)
+    } else {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+      setIsDark(true)
+    }
+  }
 
   return (
-    <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-bg-secondary/95 backdrop-blur-md border-b border-border-color shadow-lg shadow-sage-green/25'
-          : 'bg-bg-secondary/40 backdrop-blur-sm border-b border-border-color/60'
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            className="text-2xl font-heading font-bold tracking-wider-3 text-gradient-sage"
+    <header className="sticky top-0 z-50 py-4 backdrop-blur-md bg-white/80 dark:bg-bg-dark/80 border-b border-neutral-200 dark:border-neutral-800 transition-colors duration-300">
+      <div className="container mx-auto max-w-3xl px-4 flex items-center justify-between">
+        <div className="flex items-center gap-5">
+          <a href="#home">
+            <img
+              src="/assets/pfp.jpeg"
+              alt="Srishti Kumari"
+              className="h-11 w-11 rounded-full object-cover border border-neutral-200 dark:border-neutral-700 bg-yellow-400 dark:bg-yellow-300 transition-transform duration-300 hover:scale-90"
+              onError={(e) => {
+                e.target.src = 'https://ui-avatars.com/api/?name=Srishti+Kumari&background=eab308&color=fff'
+              }}
+            />
+          </a>
+          <nav className="flex items-center gap-5">
+            <a href="#skills" className="text-sm font-medium hover:underline hover:decoration-2 hover:underline-offset-4 text-neutral-800 dark:text-neutral-200 transition-all">Skills</a>
+            <a href="#projects" className="text-sm font-medium hover:underline hover:decoration-2 hover:underline-offset-4 text-neutral-800 dark:text-neutral-200 transition-all">Projects</a>
+            <a href="#education" className="text-sm font-medium hover:underline hover:decoration-2 hover:underline-offset-4 text-neutral-800 dark:text-neutral-200 transition-all">Education</a>
+            <a href="#contact" className="text-sm font-medium hover:underline hover:decoration-2 hover:underline-offset-4 text-neutral-800 dark:text-neutral-200 transition-all">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <button
+            onClick={toggleTheme}
+            className="inline-flex items-center justify-center size-10 rounded-md border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200 hover:bg-neutral-200 dark:hover:bg-neutral-800 transition-all duration-300 active:scale-95 cursor-pointer"
+            aria-label="Toggle theme"
           >
-            SK
-          </motion.div>
-
-          {/* Nav Links - Desktop */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link, index) => (
-              <motion.a
-                key={link.name}
-                href={link.href}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
-                className="text-text-primary hover:text-sage-green transition-colors duration-300 relative group font-medium"
-              >
-                {link.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-sage-green to-sage-light transition-all duration-300 group-hover:w-full"></span>
-              </motion.a>
-            ))}
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
-            <button className="text-sage-green">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            </button>
-          </div>
+            {isDark ? <FiSun className="size-4" /> : <FiMoon className="size-4" />}
+          </button>
         </div>
       </div>
-    </motion.nav>
+    </header>
   )
 }
-
-export default Navbar
-
-
-
-

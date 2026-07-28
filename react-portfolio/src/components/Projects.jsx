@@ -1,254 +1,123 @@
-import { motion } from 'framer-motion'
-import { useInView } from 'framer-motion'
-import { useRef } from 'react'
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
+import { FiExternalLink, FiGithub } from 'react-icons/fi'
 
-const Projects = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, margin: "-100px" })
-
+export default function Projects() {
   const projects = [
     {
-      title: "Emotion Detection Web App",
-      subtitle: "Real-time Emotion Recognition using Deep Learning",
-      description: "A machine learning-powered web application that detects human emotions in real-time using deep learning and computer vision. Built with TensorFlow for model training and Streamlit for deployment.",
-      techStack: ["Python", "TensorFlow", "Streamlit", "OpenCV", "Pandas", "NumPy", "Scikit-learn"],
-      architecture: [
-        {
-          layer: "Input Layer",
-          description: "Image preprocessing (48x48 grayscale)"
-        },
-        {
-          layer: "Feature Extraction",
-          description: "Convolutional Neural Network (CNN)"
-        },
-        {
-          layer: "Classification Layer",
-          description: "Dense layers with softmax activation"
-        },
-        {
-          layer: "Output",
-          description: "7 emotion categories (Happy, Sad, Angry, Neutral, Surprise, Fear, Disgust)"
-        }
+      title: 'Emotion Detection Web Application',
+      subtitle: 'Python • NLP • Scikit-learn • Streamlit',
+      description: 'An NLP web application that classifies emotions from free-text input in real time using supervised machine learning algorithms.',
+      bullets: [
+        'Designed a text preprocessing and feature-extraction pipeline using tokenization and vectorization.',
+        'Trained and evaluated a supervised classification model using accuracy and standard metrics.',
+        'Deployed the interactive model live on Streamlit Cloud.',
       ],
-      github: "https://github.com/Srishtik-ui/emotion-app",
-      liveDemo: "https://emotion-app-s34ugxdudmmdfkifxyhnuv.streamlit.app/",
-      gradient: "from-sage-green to-accent-secondary"
+      tags: ['Python', 'NLP', 'Scikit-learn', 'Streamlit'],
+      liveDemo: 'https://emotion-app-s34ugxdudmmdfkifxyhnuv.streamlit.app',
     },
     {
-      title: "Car Sales Price Prediction",
-      subtitle: "ML-Based Price Estimation System",
-      description: "A comprehensive machine learning project that predicts car prices based on features like brand, model, year, mileage, fuel type. Uses ensemble techniques and feature engineering for accurate predictions.",
-      techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "Streamlit"],
-      architecture: [
-        {
-          layer: "Data Collection",
-          description: "Web scraping & dataset preprocessing"
-        },
-        {
-          layer: "Feature Engineering",
-          description: "Handling categorical variables, scaling, encoding"
-        },
-        {
-          layer: "Model Training",
-          description: "Random Forest, XGBoost, Linear Regression"
-        },
-        {
-          layer: "Evaluation",
-          description: "R² Score, RMSE, MAE metrics"
-        }
+      title: 'Car Sales Price Prediction',
+      subtitle: 'Python • Pandas • Scikit-learn • Gradio',
+      description: 'A regression model predicting used car prices from manufacture year, mileage, fuel type, and engine parameters.',
+      bullets: [
+        'Cleaned and preprocessed data, encoding categorical variables and scaling numerical features.',
+        'Evaluated model fit using R2 score and error metrics to minimize prediction variance.',
+        'Deployed to Hugging Face Spaces with an intuitive Gradio interface for live valuation.',
       ],
-      github: "https://github.com/Srishtik-ui/Car_price_predictor",
-      liveDemo: "https://huggingface.co/spaces/Git-bash1706/car-sales",
-      gradient: "from-accent-secondary to-sage-green"
+      tags: ['Python', 'Pandas', 'Scikit-learn', 'Gradio', 'Hugging Face'],
+      liveDemo: 'https://huggingface.co/spaces/Srishti-17/car-sales',
     },
     {
-      title: "Loan Prediction",
-      subtitle: "Loan Approval Prediction System",
-      description: "A machine learning project that predicts loan approval outcomes using feature engineering, SMOTE handling, and model evaluation.",
-      techStack: ["Python", "Pandas", "Scikit-learn", "Streamlit", "SMOTE"],
-      architecture: [
-        {
-          layer: "Data Preprocessing",
-          description: "Missing-value treatment, encoding, and imbalance handling"
-        },
-        {
-          layer: "Modeling",
-          description: "Train and compare classification models"
-        },
-        {
-          layer: "Deployment",
-          description: "Streamlit interface for real-time prediction"
-        }
+      title: 'Fine-Tuning Qwen 0.6B with LoRA',
+      subtitle: 'Python • PyTorch • Transformers • PEFT',
+      description: 'Parameter-efficient fine-tuning of Qwen 0.6B LLM using Low-Rank Adaptation (LoRA) for question answering and summarization.',
+      bullets: [
+        'Prepared a public Hugging Face dataset, including tokenization and prompt formatting for chat templates.',
+        'Updated only a small subset of model weights via PEFT, drastically reducing memory overhead vs full fine-tuning.',
+        'Compared fine-tuned outputs against the base model to demonstrate qualitative improvements.',
       ],
-      github: "https://github.com/Srishtik-ui/Loan_Prediction",
-      liveDemo: "https://github.com/Srishtik-ui/Loan_Prediction",
-      gradient: "from-sage-green via-accent-secondary to-sage-green"
+      tags: ['PyTorch', 'Hugging Face', 'LoRA / PEFT', 'LLM'],
+      github: 'https://github.com/Srishtik-ui/fine-tuning-qwen-0.6B',
     },
     {
-      title: "Fine-Tuning Qwen 3.0.6B",
-      subtitle: "LLM Fine-Tuning (LoRA / PEFT)",
-      description: "Parameter-efficient fine-tuning of Qwen 3.0.6B using LoRA to adapt the model for QA and summarization tasks.",
-      techStack: ["Python", "PyTorch", "Hugging Face", "LoRA", "PEFT"],
-      architecture: [
-        { layer: "Dataset", description: "Prepare HF dataset and prompts" },
-        { layer: "Tokenization", description: "Tokenize with chat template" },
-        { layer: "Fine-tuning", description: "LoRA adapters + PEFT" },
-        { layer: "Evaluation", description: "Qualitative and quantitative checks" }
+      title: 'Loan Approval Prediction System',
+      subtitle: 'ISOEH Training • Scikit-learn • SMOTE • Streamlit',
+      description: 'Loan approval classification system featuring EDA, missing-value treatment, SMOTE oversampling, and interactive prediction interface.',
+      bullets: [
+        'Handled imbalanced dataset using Synthetic Minority Over-sampling Technique (SMOTE).',
+        'Evaluated classifiers (Random Forest, Decision Trees, Logistic Regression) to select top performer.',
       ],
-      github: "https://github.com/Srishtik-ui/Fine_tuning_of_Qwen-Qwen3-0.6B_Model",
-      liveDemo: "https://github.com/Srishtik-ui/Fine_tuning_of_Qwen-Qwen3-0.6B_Model",
-      gradient: "from-accent-secondary to-sage-green"
+      tags: ['Python', 'Scikit-learn', 'SMOTE', 'Streamlit'],
     },
-    {
-      title: "Loan Approval Prediction",
-      subtitle: "Loan Approval Prediction System",
-      description: "Built a loan approval model with data cleaning, feature engineering, SMOTE handling, and deployment via Streamlit.",
-      techStack: ["Python", "Pandas", "Scikit-learn", "Streamlit", "SMOTE"],
-      architecture: [
-        { layer: "Data Preprocessing", description: "Missing-value treatment and encoding" },
-        { layer: "Modeling", description: "Classifier selection and evaluation" },
-        { layer: "Deployment", description: "Streamlit app for real-time predictions" }
-      ],
-      github: "https://github.com/Srishtik-ui/Loan_Prediction",
-      liveDemo: "https://github.com/Srishtik-ui/Loan_Prediction",
-      gradient: "from-sage-green to-accent-secondary"
-    }
   ]
 
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2
-      }
-    }
-  }
-
-  const itemVariants = {
-    hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.6 }
-    }
-  }
-
   return (
-    <section id="projects" ref={ref} className="py-20 bg-bg-secondary relative overflow-hidden">
-      <div className="absolute bottom-20 right-20 w-80 h-80 bg-sage-green/5 rounded-full blur-3xl"></div>
+    <section id="projects" className="pt-16 pb-8">
+      <div className="container mx-auto max-w-3xl px-4 animate-fade-in-blur">
+        <div>
+          <p className="text-xs font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400">Featured</p>
+          <h2 className="text-2xl font-bold text-neutral-900 dark:text-neutral-100">Projects</h2>
+        </div>
 
-      <div className="max-w-6xl mx-auto px-6">
-        <motion.div
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
-          variants={containerVariants}
-        >
-          {/* Section Title */}
-          <motion.div variants={itemVariants} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-wide">
-              Featured <span className="text-gradient-sage">Projects</span>
-            </h2>
-            <p className="text-text-secondary mt-4 max-w-2xl mx-auto">
-              Hands-on machine learning projects showcasing data science expertise and problem-solving skills
-            </p>
-          </motion.div>
+        <div className="mt-8 flex flex-col gap-6">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="rounded-xl border border-dashed border-neutral-300 dark:border-neutral-800 p-6 bg-white dark:bg-neutral-900/50 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all duration-300"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <h3 className="text-xl font-bold text-neutral-900 dark:text-neutral-100">{project.title}</h3>
+                <span className="text-xs font-medium text-neutral-500 dark:text-neutral-400">{project.subtitle}</span>
+              </div>
 
-          {/* Projects Grid */}
-          <div className="space-y-12">
-            {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                className="bg-card-bg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl hover:shadow-sage-green/10 transition-all duration-300 border border-border-primary"
-              >
-                {/* Top Gradient Border */}
-                <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
+              <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">{project.description}</p>
 
-                <div className="p-8">
-                  {/* Title & Subtitle */}
-                  <div className="mb-6">
-                    <h3 className="text-2xl md:text-3xl font-heading font-bold text-text-primary mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-sage-light font-semibold">{project.subtitle}</p>
-                  </div>
+              {project.bullets && (
+                <ul className="mt-3 list-disc list-inside space-y-1 text-sm text-neutral-600 dark:text-neutral-400">
+                  {project.bullets.map((bullet, idx) => (
+                    <li key={idx}>{bullet}</li>
+                  ))}
+                </ul>
+              )}
 
-                  {/* Description */}
-                  <p className="text-text-secondary leading-relaxed mb-6">
-                    {project.description}
-                  </p>
+              <div className="mt-4 flex flex-wrap gap-1.5">
+                {project.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="inline-block text-xs font-semibold px-2.5 py-0.5 rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
 
-                  {/* Tech Stack */}
-                  <div className="mb-6">
-                    <h4 className="text-sage-green font-semibold mb-3">Tech Stack:</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {project.techStack.map((tech, techIndex) => (
-                        <span
-                          key={techIndex}
-                          className="px-3 py-1 bg-bg-primary rounded-full text-sm border border-sage-green/30 text-text-primary"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Architecture Flow */}
-                  <div className="mb-6">
-                    <h4 className="text-sage-green font-semibold mb-4">Architecture:</h4>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                      {project.architecture.map((layer, layerIndex) => (
-                        <div
-                          key={layerIndex}
-                          className="bg-bg-secondary p-4 rounded-lg border border-sage-green/20"
-                        >
-                          <div className="text-sage-green font-semibold mb-2 text-sm">
-                            {layer.layer}
-                          </div>
-                          <div className="text-text-secondary text-xs">
-                            {layer.description}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Links */}
-                  <div className="flex flex-wrap gap-4">
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-sage-green to-accent-secondary rounded-full text-white font-semibold hover:scale-105 transition-transform duration-300"
-                    >
-                      <FaGithub className="text-xl" />
-                      View Code
-                    </a>
-                    <a
-                      href={project.liveDemo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-6 py-3 bg-bg-primary border-2 border-sage-green rounded-full text-sage-green font-semibold hover:bg-sage-green hover:text-white transition-all duration-300"
-                    >
-                      <FaExternalLinkAlt className="text-lg" />
-                      Live Demo
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+              <div className="mt-5 flex flex-wrap gap-3">
+                {project.liveDemo && (
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+                  >
+                    <FiExternalLink className="size-3.5" />
+                    <span>Live Demo</span>
+                  </a>
+                )}
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-md border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-800 text-neutral-900 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-700 transition-colors"
+                  >
+                    <FiGithub className="size-3.5" />
+                    <span>GitHub</span>
+                  </a>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
 }
-
-export default Projects
-
-
-
-
