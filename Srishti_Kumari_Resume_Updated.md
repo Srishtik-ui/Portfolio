@@ -4,7 +4,7 @@ Kolkata, India | +91 9508462545 | srishtik717@gmail.com
 srishtik.me | LinkedIn | GitHub
 
 ## Summary
-Computer Science (Data Science) undergraduate with hands-on experience building and deploying 4+ machine learning applications, including NLP classification, regression modeling, and LLM fine-tuning, using Python, Scikit-learn, PyTorch, and Hugging Face. Experienced across the ML lifecycle: data cleaning, EDA, feature engineering, model evaluation, and production deployment via Streamlit and Hugging Face Spaces. Seeking a Data Science, Machine Learning, or AI Engineer role to apply deployment-focused ML skills.
+Fourth-year B.Tech student in **Computer Science and Engineering (Data Science)** at **Haldia Institute of Technology**, passionate about Data Science, Machine Learning, and AI. Skilled in **Python, SQL, Pandas, NumPy, Scikit-learn, Power BI, and Data Visualization**. Experienced in building end-to-end machine learning projects, data analysis, and predictive modeling. Currently strengthening my skills in **Data Structures & Algorithms** and developing scalable, data-driven solutions.
 
 ## Core Competencies
 Machine Learning | Deep Learning | NLP | LLM Fine-Tuning (LoRA/PEFT) | EDA | Feature Engineering | Regression | Classification | Model Evaluation | Python | SQL | Scikit-learn | PyTorch | Hugging Face

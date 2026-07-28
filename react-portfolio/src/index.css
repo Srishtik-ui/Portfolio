@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,52 +10,10 @@
   }
   
   body {
-    @apply bg-bg-primary text-text-primary font-body;
+    @apply bg-bg-light text-neutral-900 dark:bg-bg-dark dark:text-neutral-100 font-sans transition-colors duration-300 antialiased min-h-screen;
   }
 }
 
-@layer utilities {
-  .text-gradient-sage {
-    @apply bg-gradient-to-r from-sage-green to-sage-light bg-clip-text text-transparent;
-  }
-  
-  .glow-sage {
-    box-shadow: 0 0 30px rgba(201, 169, 110, 0.3), inset 0 0 30px rgba(201, 169, 110, 0.1);
-  }
-  
-  .glow-sage-hover:hover {
-    box-shadow: 0 0 50px rgba(201, 169, 110, 0.5), inset 0 0 30px rgba(201, 169, 110, 0.2);
-  }
-  
-  .sage-border-top {
-    border-top: 3px solid #B8860B;
-  }
+.skill-pill-inline {
+  @apply inline-flex items-center gap-1.5 text-sm font-semibold text-neutral-900 dark:text-neutral-100 bg-black/5 dark:bg-white/10 border border-dashed border-black/20 dark:border-white/20 py-0.5 px-2.5 rounded-md hover:bg-black/10 dark:hover:bg-white/15 hover:border-black/30 dark:hover:border-white/30 transition-all duration-200;
 }
-
-/* Custom Animations */
-@keyframes profileGlow {
-  0%, 100% {
-    box-shadow: 0 0 30px rgba(201, 169, 110, 0.3), inset 0 0 30px rgba(201, 169, 110, 0.1);
-  }
-  50% {
-    box-shadow: 0 0 50px rgba(201, 169, 110, 0.5), inset 0 0 30px rgba(201, 169, 110, 0.2);
-  }
-}
-
-.animate-profile-glow {
-  animation: profileGlow 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-}
-
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-

@@ -4,25 +4,26 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        'bg-primary': '#080608',
-        'bg-secondary': '#100D12',
-        'card-bg': '#141018',
-        'sage-green': '#B8860B',
-        'sage-light': '#E8D5B0',
-        'text-primary': '#FDF8F0',
-        'text-secondary': '#9B8B7A',
-        'border-color': '#2A2020',
+        'bg-dark': '#09090b',
+        'card-dark': '#121215',
+        'bg-light': '#fafafa',
+        'card-light': '#ffffff',
       },
       fontFamily: {
-        'heading': ['"Cormorant Garamond"', 'serif'],
-        'body': ['Poppins', 'sans-serif'],
+        'sans': ['"Hanken Grotesk"', 'Inter', 'sans-serif'],
       },
-      letterSpacing: {
-        'wider-2': '0.1em',
-        'wider-3': '0.15em',
+      animation: {
+        'fade-in-blur': 'fadeInBlur 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+      },
+      keyframes: {
+        fadeInBlur: {
+          '0%': { opacity: '0', filter: 'blur(8px)', transform: 'translateY(12px)' },
+          '100%': { opacity: '1', filter: 'blur(0)', transform: 'translateY(0)' },
+        },
       },
     },
   },

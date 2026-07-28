@@ -1,854 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Srishti Kumari - Data Science & Machine Learning Portfolio. B.Tech CSE (Data Science) student at Haldia Institute of Technology. Explore ML projects, skills, and achievements.">
-    <meta name="keywords" content="Srishti Kumari, Data Science, Machine Learning, AI, Portfolio, Python, ML Projects">
-    <meta name="author" content="Srishti Kumari">
-    <link rel="icon" type="image/jpeg" href="assets/pfp.jpeg">
-    <link rel="shortcut icon" type="image/jpeg" href="assets/pfp.jpeg">
-    <title>Srishti Kumari | Data Science & ML Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srishti Kumari - Data Science & Machine Learning Engineer</title>
+  <meta name="description" content="Srishti Kumari's Portfolio. B.Tech CSE (Data Science) student at Haldia Institute of Technology specializing in Machine Learning, PyTorch, Scikit-learn, and Data Science." />
+  <meta name="author" content="Srishti Kumari" />
+  <link rel="icon" href="assets/pfp.jpeg" type="image/jpeg" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
-        <i class="fas fa-moon"></i>
-    </button>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">SK</span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#achievements" class="nav-link">Achievements</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+  <!-- Sticky Glassmorphic Navbar -->
+  <header class="sticky-navbar">
+    <div class="container-narrow nav-wrapper">
+      <div class="nav-left">
+        <a href="#home">
+          <img src="assets/pfp.jpeg" alt="Srishti Kumari" class="avatar-nav" />
+        </a>
+        <ul class="nav-links">
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle theme">
+          <svg id="themeIcon" viewBox="0 0 256 256">
+            <path d="M216.7,152.6A96,96,0,0,1,103.4,39.3,8,8,0,0,0,93,30,112,112,0,1,0,226,163,8,8,0,0,0,216.7,152.6Z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-particles"></div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="gradient-text">Srishti Kumari</span>
-                </h1>
-                <p class="hero-tagline">
-                    <span class="typewriter" id="typewriter"></span>
-                </p>
-                <p class="hero-subtitle">
-                    B.Tech CSE (Data Science) • Haldia Institute of Technology • Building ML Solutions for Tomorrow
-                </p>
-                <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">
-                        <i class="fas fa-code"></i> View Projects
-                    </a>
-                    <a href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-download"></i> Download Resume
-                    </a>
-                    <a href="#contact" class="btn btn-outline">
-                        <i class="fas fa-envelope"></i> Contact Me
-                    </a>
-                </div>
-                <div class="hero-social">
-                    <a href="https://github.com/Srishtik-ui" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/srishti-kumari-60a8502a6/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:srishti717@gmail.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="floating-card">
-                    <i class="fas fa-brain"></i>
-                    <span>Machine Learning</span>
-                </div>
-                <div class="floating-card">
-                    <i class="fas fa-chart-line"></i>
-                    <span>Data Analysis</span>
-                </div>
-                <div class="floating-card">
-                    <i class="fas fa-robot"></i>
-                    <span>AI Solutions</span>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <main class="container-narrow animate-fade-in-blur">
+    <section id="home" class="hero-section">
+      <img src="assets/pfp.jpeg" alt="Srishti Kumari Profile" class="hero-avatar" />
+      <h1 class="hero-title">
+        Hi, I'm Srishti Kumari — <br /><span class="text-accent">Data Science & ML Engineer</span>
+      </h1>
+      <p class="hero-bio">
+        Fourth-year B.Tech CSE (Data Science) student at Haldia Institute of Technology. I specialize in building end-to-end Machine Learning pipelines and AI applications using 
+        <a class="skill-pill-inline" href="https://www.python.org/" target="_blank">
+          <svg viewBox="0 0 128 128"><path fill="#3776AB" d="M63.15 0c-16.76.01-31.25.96-31.25 8.94v11.83h31.87v4.61H20.45C9.44 25.38 0 32.33 0 46.88c0 14.54 8.52 20.89 20.45 20.89h11.16v-14.8c0-10.74 9.17-19.64 19.92-19.64h31.81c9.35 0 16.92-7.57 16.92-16.92V8.94C100.26 1.13 83.2.01 63.15 0zm-15.6 10.37c2.93 0 5.3 2.37 5.3 5.3s-2.37 5.3-5.3 5.3-5.3-2.37-5.3-5.3 2.37-5.3 5.3-5.3z"/><path fill="#FFD43B" d="M64.85 128c16.76-.01 31.25-.96 31.25-8.94v-11.83H64.23v-4.61h43.32c11.01 0 20.45-6.95 20.45-21.5 0-14.54-8.52-20.89-20.45-20.89h-11.16v14.8c0 10.74-9.17 19.64-19.92 19.64H64.66c-9.35 0-16.92 7.57-16.92 16.92v25.47c0 7.81 17.06 8.93 37.11 8.94zm15.6-10.37c-2.93 0-5.3-2.37-5.3-5.3s2.37-5.3 5.3-5.3 5.3 2.37 5.3 5.3-2.37 5.3-5.3 5.3z"/></svg>
+          Python
+        </a>, 
+        <a class="skill-pill-inline" href="https://pytorch.org/" target="_blank">
+          <svg viewBox="0 0 128 128"><path fill="#EE4C2C" d="M83.4 17.5l-6 6c11.6 11.6 11.6 30.5 0 42.1l6 6c14.9-14.9 14.9-39.2 0-54.1zM64 0L48.2 15.8l6 6L64 12l9.8 9.8 6-6L64 0zm-35.4 17.5c-14.9 14.9-14.9 39.2 0 54.1l6-6c-11.6-11.6-11.6-30.5 0-42.1l-6-6zm33.1 19.4a15.9 15.9 0 00-11.2 27.2l17.3 17.3 6-6L56.5 58.1A7.9 7.9 0 0167.7 46.9l6 6a15.9 15.9 0 00-12-16z"/></svg>
+          PyTorch
+        </a>, 
+        <a class="skill-pill-inline" href="https://scikit-learn.org/" target="_blank">
+          <svg viewBox="0 0 128 128"><path fill="#F7931E" d="M64 12c-28.7 0-52 23.3-52 52s23.3 52 52 52 52-23.3 52-52-23.3-52-52-52zm0 88c-19.9 0-36-16.1-36-36s16.1-36 36-36 36 16.1 36 36-16.1 36-36 36z"/></svg>
+          Scikit-learn
+        </a>, 
+        <a class="skill-pill-inline" href="https://huggingface.co/" target="_blank">
+          <svg viewBox="0 0 128 128"><path fill="#FFD21E" d="M64 12a52 52 0 100 104 52 52 0 000-104zm-18 42a8 8 0 110-16 8 8 0 010 16zm36 0a8 8 0 110-16 8 8 0 010 16zm-36 28c8 10 28 10 36 0"/></svg>
+          Hugging Face
+        </a>, and deploying real-time applications with 
+        <a class="skill-pill-inline" href="https://streamlit.io/" target="_blank">
+          <svg viewBox="0 0 128 128"><path fill="#FF4B4B" d="M64 16L8 112h112L64 16zm0 28l36 60H28l36-60z"/></svg>
+          Streamlit
+        </a> &amp; 
+        <a class="skill-pill-inline" href="https://gradio.app/" target="_blank">
+          <svg viewBox="0 0 128 128"><path fill="#FF7C00" d="M64 12L12 64l52 52 52-52-52-52zm0 28l28 28-28 28-28-28 28-28z"/></svg>
+          Gradio
+        </a>.
+      </p>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="about-intro">
-                        Hello! I'm Srishti Kumari, a passionate <strong>Data Science and Machine Learning enthusiast</strong> currently pursuing my B.Tech in Computer Science and Engineering (Data Science) at Haldia Institute of Technology. My journey into the world of data began with curiosity about how algorithms can uncover patterns and drive intelligent decision-making.
-                    </p>
-                    <p>
-                        With a strong foundation in <strong>Python, SQL, and Machine Learning frameworks</strong>, I specialize in building end-to-end ML solutions—from data preprocessing and exploratory analysis to model deployment. My experience spans <strong>predictive modeling, recommendation systems, and data visualization</strong>, with a focus on solving real-world problems through data-driven insights.
-                    </p>
-                    <p>
-                        I'm particularly excited about applying ML to impactful domains like <strong>prediction systems, recommendation engines, and analytical dashboards</strong>. Whether it's engineering features for better model performance or crafting visualizations that tell compelling data stories, I thrive on transforming raw data into actionable intelligence.
-                    </p>
-                    <div class="mission-box">
-                        <i class="fas fa-bullseye"></i>
-                        <div>
-                            <h3>My Mission</h3>
-                            <p>To build impactful AI solutions that drive real-world value through predictive analytics, intelligent automation, and data-driven decision-making. I'm committed to continuous learning and staying at the forefront of ML innovation.</p>
-                        </div>
-                    </div>
-                    <div class="stats-grid">
-                        <div class="stat-card">
-                            <i class="fas fa-project-diagram"></i>
-                            <h4>10+</h4>
-                            <p>ML Projects</p>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-code"></i>
-                            <h4>100+</h4>
-                            <p>GitHub Commits</p>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-graduation-cap"></i>
-                            <h4>7.87</h4>
-                            <p>YGPA</p>
-                        </div>
-                        <div class="stat-card">
-                            <i class="fas fa-trophy"></i>
-                            <h4>Active</h4>
-                            <p>Community Member</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="hero-actions">
+        <a href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link" target="_blank" class="btn-primary">
+          <svg viewBox="0 0 256 256"><path d="M210.78,39.25l-130.25-23A16,16,0,0,0,62,29.23l-29.75,169a16,16,0,0,0,13,18.53l130.25,23h0a16,16,0,0,0,18.54-13l29.75-169A16,16,0,0,0,210.78,39.25ZM178.26,224h0L48,201,77.75,32,208,55ZM89.34,58.42a8,8,0,0,1,9.27-6.48l83,14.65a8,8,0,0,1-1.39,15.88,8.36,8.36,0,0,1-1.4-.12l-83-14.66A8,8,0,0,1,89.34,58.42ZM83.8,89.94a8,8,0,0,1,9.27-6.49l83,14.66A8,8,0,0,1,174.67,114a7.55,7.55,0,0,1-1.41-.13l-83-14.65A8,8,0,0,1,83.8,89.94Zm-5.55,31.51A8,8,0,0,1,87.52,115L129,122.29a8,8,0,0,1-1.38,15.88,8.27,8.27,0,0,1-1.4-.12l-41.5-7.33A8,8,0,0,1,78.25,121.45Z"></path></svg>
+          Resume / CV
+        </a>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/srishti-kumari-60a8502a6/" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+          <svg viewBox="0 0 256 256"><path d="M216,24H40A16,16,0,0,0,24,40V216a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V40A16,16,0,0,0,216,24Zm0,192H40V40H216V216ZM96,112v64a8,8,0,0,1-16,0V112a8,8,0,0,1,16,0Zm88,28v36a8,8,0,0,1-16,0V140a20,20,0,0,0-40,0v36a8,8,0,0,1-16,0V112a8,8,0,0,1,15.79-1.78A36,36,0,0,1,184,140ZM100,84A12,12,0,1,1,88,72,12,12,0,0,1,100,84Z"></path></svg>
+        </a>
+        <a href="https://github.com/Srishtik-ui" target="_blank" class="social-icon-btn" aria-label="GitHub">
+          <svg viewBox="0 0 256 256"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path></svg>
+        </a>
+        <a href="mailto:srishtik717@gmail.com" class="social-icon-btn" aria-label="Email">
+          <svg viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></svg>
+        </a>
+      </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
-            <p class="section-subtitle">Organized by proficiency level and continuously expanding</p>
-            
-            <!-- Proficiency Level: Expert/Proficient -->
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <i class="fas fa-star"></i> Proficient
-                </h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <h4>Python</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="95"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>SQL</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-table"></i>
-                        </div>
-                        <h4>Pandas</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="92"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-calculator"></i>
-                        </div>
-                        <h4>NumPy</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h4>Scikit-learn</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="88"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <h4>Matplotlib</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-chart-area"></i>
-                        </div>
-                        <h4>Seaborn</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-broom"></i>
-                        </div>
-                        <h4>Data Cleaning</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <h4>EDA</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="88"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-wrench"></i>
-                        </div>
-                        <h4>Feature Engineering</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h4>Supervised Learning</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="87"></div>
-                        </div>
-                        <span class="skill-rating">★★★★★</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Proficiency Level: Intermediate -->
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <i class="fas fa-chart-line"></i> Intermediate
-                </h3>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>SQL</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75"></div>
-                        </div>
-                        <span class="skill-rating">★★★★☆</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-git-alt"></i>
-                        </div>
-                        <h4>Git</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                        <span class="skill-rating">★★★★☆</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <h4>GitHub</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                        <span class="skill-rating">★★★★☆</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h4>MySQL</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75"></div>
-                        </div>
-                        <span class="skill-rating">★★★★☆</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-html5"></i>
-                        </div>
-                        <h4>HTML/CSS</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75"></div>
-                        </div>
-                        <span class="skill-rating">★★★★☆</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-check-circle"></i>
-                        </div>
-                        <h4>Model Evaluation</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="80"></div>
-                        </div>
-                        <span class="skill-rating">★★★★☆</span>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-java"></i>
-                        </div>
-                        <h4>Java</h4>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="60"></div>
-                        </div>
-                        <span class="skill-rating">★★★☆☆</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Currently Learning -->
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <i class="fas fa-seedling"></i> Currently Learning
-                </h3>
-                <div class="learning-grid">
-                    <div class="learning-card">
-                        <i class="fas fa-network-wired"></i>
-                        <h4>TensorFlow</h4>
-                        <p>Deep learning framework for neural networks and advanced ML models</p>
-                    </div>
-                    <div class="learning-card">
-                        <i class="fas fa-fire"></i>
-                        <h4>PyTorch</h4>
-                        <p>Flexible deep learning library for research and production</p>
-                    </div>
-                    <div class="learning-card">
-                        <i class="fas fa-flask"></i>
-                        <h4>Flask/FastAPI</h4>
-                        <p>ML model deployment and APIs</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Soft Skills -->
-            <div class="skill-category">
-                <h3 class="skill-category-title">
-                    <i class="fas fa-users"></i> Soft Skills
-                </h3>
-                <div class="soft-skills-grid">
-                    <div class="soft-skill-card">
-                        <i class="fas fa-lightbulb"></i>
-                        <h4>Problem Solving</h4>
-                        <p>Demonstrated through end-to-end ML projects tackling real-world challenges</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <i class="fas fa-comments"></i>
-                        <h4>Communication</h4>
-                        <p>Public Relations Member at DSCH, leading outreach and event coordination</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <i class="fas fa-users-cog"></i>
-                        <h4>Collaboration</h4>
-                        <p>Active team player in technical clubs and group projects</p>
-                    </div>
-                    <div class="soft-skill-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h4>Continuous Learning</h4>
-                        <p>Constantly expanding skill set in emerging ML/AI technologies</p>
-                    </div>
-                </div>
-            </div>
+    <section id="skills">
+      <div>
+        <p class="section-subtitle">My</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+      
+      <div class="dashed-container">
+        <!-- Machine Learning & Deep Learning -->
+        <h3 class="skill-category-title">Machine Learning &amp; Deep Learning</h3>
+        <div class="skill-grid">
+          <span class="skill-pill-inline">Python</span>
+          <span class="skill-pill-inline">PyTorch</span>
+          <span class="skill-pill-inline">Scikit-learn</span>
+          <span class="skill-pill-inline">Hugging Face Transformers</span>
+          <span class="skill-pill-inline">LoRA / PEFT</span>
+          <span class="skill-pill-inline">Natural Language Processing</span>
+          <span class="skill-pill-inline">Supervised Learning</span>
+          <span class="skill-pill-inline">EDA &amp; Feature Engineering</span>
         </div>
+
+        <div class="divider-dashed"></div>
+
+        <!-- Data Analytics & Databases -->
+        <h3 class="skill-category-title">Data Science &amp; Analytics</h3>
+        <div class="skill-grid">
+          <span class="skill-pill-inline">SQL (MySQL)</span>
+          <span class="skill-pill-inline">Pandas</span>
+          <span class="skill-pill-inline">NumPy</span>
+          <span class="skill-pill-inline">Matplotlib</span>
+          <span class="skill-pill-inline">Seaborn</span>
+          <span class="skill-pill-inline">Data Cleaning</span>
+          <span class="skill-pill-inline">Model Evaluation</span>
+        </div>
+
+        <div class="divider-dashed"></div>
+
+        <!-- Web Frameworks & Deployment -->
+        <h3 class="skill-category-title">Web &amp; Deployment</h3>
+        <div class="skill-grid">
+          <span class="skill-pill-inline">Streamlit</span>
+          <span class="skill-pill-inline">Gradio</span>
+          <span class="skill-pill-inline">HTML5</span>
+          <span class="skill-pill-inline">CSS3</span>
+          <span class="skill-pill-inline">JavaScript</span>
+        </div>
+
+        <div class="divider-dashed"></div>
+
+        <!-- Tools & Security -->
+        <h3 class="skill-category-title">Tools &amp; Certifications</h3>
+        <div class="skill-grid">
+          <span class="skill-pill-inline">Git</span>
+          <span class="skill-pill-inline">GitHub</span>
+          <span class="skill-pill-inline">Jupyter Notebook</span>
+          <span class="skill-pill-inline">ISOEH Advanced Python &amp; Security</span>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-            <p class="section-subtitle">End-to-end Machine Learning solutions demonstrating technical depth and practical impact</p>
-            
-            <!-- Featured Project -->
-            <div class="project-featured">
-                <div class="project-badge">Featured</div>
-                <div class="project-content">
-                    <div class="project-image">
-                        <div class="project-visual">
-                            <i class="fas fa-car"></i>
-                        </div>
-                    </div>
-                    <div class="project-details">
-                        <h3 class="project-title">Car Price Prediction System</h3>
-                        <p class="project-impact">
-                            <i class="fas fa-bullseye"></i> 
-                            <strong>Impact:</strong> Built a production-ready ML system achieving 92% R² score, enabling data-driven pricing decisions for automotive dealers and consumers
-                        </p>
-                        <p class="project-description">
-                            <strong>Problem Context:</strong> Accurate car valuation is critical for buyers, sellers, and dealers. This project implements a comprehensive ML pipeline to predict car prices based on features like brand, model year, mileage, fuel type, and transmission.
-                        </p>
-                        <div class="project-tech-stack">
-                            <h4>Tech Stack & Methodology</h4>
-                            <div class="tech-tags">
-                                <span><i class="fab fa-python"></i> Python</span>
-                                <span><i class="fas fa-table"></i> Pandas</span>
-                                <span><i class="fas fa-calculator"></i> NumPy</span>
-                                <span><i class="fas fa-brain"></i> Scikit-learn</span>
-                                <span><i class="fas fa-chart-line"></i> Matplotlib</span>
-                                <span><i class="fas fa-chart-area"></i> Seaborn</span>
-                            </div>
-                        </div>
-                        <div class="project-methodology">
-                            <ul>
-                                <li><strong>Data Preprocessing:</strong> Handled missing values, outlier detection, and encoding categorical variables</li>
-                                <li><strong>Feature Engineering:</strong> Created age from year, interaction features, and polynomial features</li>
-                                <li><strong>Models Tested:</strong> Linear Regression, Ridge, Lasso, Random Forest, Gradient Boosting</li>
-                                <li><strong>Evaluation:</strong> R² Score (0.92), MAE (₹45,000), RMSE (₹62,000)</li>
-                            </ul>
-                        </div>
-                        <div class="project-results">
-                            <div class="result-metric">
-                                <i class="fas fa-chart-line"></i>
-                                <span>92% R² Score</span>
-                            </div>
-                            <div class="result-metric">
-                                <i class="fas fa-bullseye"></i>
-                                <span>Low MAE/RMSE</span>
-                            </div>
-                            
-                        </div>
-                        <div class="project-challenges">
-                            <h4>Key Challenges</h4>
-                            <p>Handling non-linear relationships between features and price, dealing with multicollinearity, and ensuring model generalization across different car categories.</p>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/ayushjha4wd/Car_price_prediction" target="_blank" class="btn btn-primary">
-                                <i class="fab fa-github"></i> View on GitHub
-                            </a>
-                            <a href="https://github.com/ayushjha4wd/Car_price_prediction" target="_blank" class="btn btn-outline">
-                                <i class="fas fa-external-link-alt"></i> Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section id="projects">
+      <div>
+        <p class="section-subtitle">Featured</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
 
-            <!-- Other Projects Grid -->
-            <div class="projects-grid">
-                <!-- Titanic Survival Prediction -->
-                <div class="project-card">
-                    <div class="project-card-header">
-                        <div class="project-icon">
-                            <i class="fas fa-ship"></i>
-                        </div>
-                        <h3>Titanic Survival Prediction</h3>
-                    </div>
-                    <p class="project-card-description">
-                        <strong>Problem:</strong> Binary classification challenge to predict passenger survival on the Titanic using demographic and ticket information.
-                    </p>
-                    <p><strong>Dataset:</strong> Kaggle Titanic dataset (891 training samples, 418 test samples)</p>
-                    <div class="project-highlights">
-                        <h4>Methodology & Results</h4>
-                        <ul>
-                            <li><strong>Feature Engineering:</strong> Created family_size, title extraction from names, fare_per_person</li>
-                            <li><strong>Models:</strong> Logistic Regression (78%), Decision Tree (82%), Random Forest (85%)</li>
-                            <li><strong>Techniques:</strong> Cross-validation, hyperparameter tuning with GridSearchCV</li>
-                            <li><strong>Best Model:</strong> Random Forest with 85% accuracy on validation set</li>
-                        </ul>
-                    </div>
-                    <div class="tech-tags-small">
-                        <span>Python</span>
-                        <span>Scikit-learn</span>
-                        <span>Pandas</span>
-                        <span>Classification</span>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Srishtik-ui" target="_blank" class="btn-link">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Movie Recommendation System -->
-                <div class="project-card">
-                    <div class="project-card-header">
-                        <div class="project-icon">
-                            <i class="fas fa-film"></i>
-                        </div>
-                        <h3>Movie Recommendation System</h3>
-                    </div>
-                    <p class="project-card-description">
-                        <strong>Problem:</strong> Content-based recommendation system to suggest similar movies based on plot descriptions, genres, and keywords.
-                    </p>
-                    <p><strong>Dataset:</strong> TMDB 5000 Movie Dataset with metadata and credits</p>
-                    <div class="project-highlights">
-                        <h4>Methodology & Results</h4>
-                        <ul>
-                            <li><strong>NLP Preprocessing:</strong> Tokenization, stemming, stopword removal on plot overviews</li>
-                            <li><strong>Vectorization:</strong> TF-IDF vectorization of text features (3000+ features)</li>
-                            <li><strong>Similarity:</strong> Cosine similarity matrix for content-based filtering</li>
-                            <li><strong>Output:</strong> Top-5 movie recommendations with similarity scores</li>
-                        </ul>
-                    </div>
-                    <div class="tech-tags-small">
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>TF-IDF</span>
-                        <span>Cosine Similarity</span>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Srishtik-ui" target="_blank" class="btn-link">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-
-                <!-- COVID-19 India Analysis -->
-                <div class="project-card">
-                    <div class="project-card-header">
-                        <div class="project-icon">
-                            <i class="fas fa-virus"></i>
-                        </div>
-                        <h3>COVID-19 India Data Analysis</h3>
-                    </div>
-                    <p class="project-card-description">
-                        <strong>Problem:</strong> Comprehensive exploratory data analysis of COVID-19 trends across Indian states to identify patterns and insights.
-                    </p>
-                    <p><strong>Dataset:</strong> Daily COVID-19 cases, deaths, and recoveries by state (2020-2021)</p>
-                    <div class="project-highlights">
-                        <h4>Methodology & Results</h4>
-                        <ul>
-                            <li><strong>Data Cleaning:</strong> Handled missing values, inconsistent date formats, data aggregation</li>
-                            <li><strong>Time-Series Analysis:</strong> Trend analysis, moving averages, growth rate calculations</li>
-                            <li><strong>Visualization:</strong> Interactive plots showing state-wise comparisons, peak periods</li>
-                            <li><strong>Insights:</strong> Identified hotspot regions, recovery patterns, vaccination impact</li>
-                        </ul>
-                    </div>
-                    <div class="tech-tags-small">
-                        <span>Python</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>Seaborn</span>
-                    </div>
-                    <div class="project-card-footer">
-                        <a href="https://github.com/Srishtik-ui" target="_blank" class="btn-link">
-                            <i class="fab fa-github"></i> View Code
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- View More Projects Button -->
-            <div class="projects-cta">
-                <a href="https://github.com/Srishtik-ui" target="_blank" class="btn btn-primary">
-                    <i class="fab fa-github"></i> View All Projects on GitHub
-                </a>
-            </div>
+      <div class="projects-list">
+        
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Emotion Detection Web Application</h3>
+            <span class="project-subtitle">Python • NLP • Scikit-learn • Streamlit</span>
+          </div>
+          <p class="project-desc">
+            An NLP web application that classifies emotions from free-text input in real time using supervised machine learning models.
+          </p>
+          <ul class="project-bullets">
+            <li>Designed a text preprocessing and feature-extraction pipeline using tokenization and vectorization.</li>
+            <li>Trained and evaluated a supervised classification model using accuracy and standard classification metrics.</li>
+            <li>Deployed the interactive application live on Streamlit Cloud.</li>
+          </ul>
+          <div class="project-tech-stack">
+            <span class="badge-tag">Python</span>
+            <span class="badge-tag">NLP</span>
+            <span class="badge-tag">Scikit-learn</span>
+            <span class="badge-tag">Streamlit</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://emotion-app-s34ugxdudmmdfkifxyhnuv.streamlit.app" target="_blank" class="link-btn">
+              <svg viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+              Live Demo
+            </a>
+          </div>
         </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Car Sales Price Prediction</h3>
+            <span class="project-subtitle">Python • Pandas • Scikit-learn • Gradio</span>
+          </div>
+          <p class="project-desc">
+            A regression model predicting used car prices based on manufacture year, mileage, fuel type, and engine features.
+          </p>
+          <ul class="project-bullets">
+            <li>Cleaned and preprocessed complex car dataset, encoding categorical variables and scaling numerical features.</li>
+            <li>Evaluated fit using R2 score and regression error metrics to optimize model performance.</li>
+            <li>Deployed to Hugging Face Spaces with an intuitive Gradio interface for real-time valuation.</li>
+          </ul>
+          <div class="project-tech-stack">
+            <span class="badge-tag">Python</span>
+            <span class="badge-tag">Pandas</span>
+            <span class="badge-tag">Scikit-learn</span>
+            <span class="badge-tag">Gradio</span>
+            <span class="badge-tag">Hugging Face</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://huggingface.co/spaces/Srishti-17/car-sales" target="_blank" class="link-btn">
+              <svg viewBox="0 0 256 256"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"></path></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Fine-Tuning Qwen 0.6B with LoRA</h3>
+            <span class="project-subtitle">Python • PyTorch • Transformers • PEFT</span>
+          </div>
+          <p class="project-desc">
+            Parameter-efficient fine-tuning of Qwen 0.6B LLM using Low-Rank Adaptation (LoRA) for question answering and text summarization.
+          </p>
+          <ul class="project-bullets">
+            <li>Prepared a public Hugging Face dataset, including tokenization and prompt formatting for chat templates.</li>
+            <li>Updated only a small subset of model weights via PEFT, drastically reducing memory overhead vs full fine-tuning.</li>
+            <li>Evaluated qualitative performance improvements against base model outputs on target tasks.</li>
+          </ul>
+          <div class="project-tech-stack">
+            <span class="badge-tag">PyTorch</span>
+            <span class="badge-tag">Hugging Face</span>
+            <span class="badge-tag">LoRA / PEFT</span>
+            <span class="badge-tag">LLM</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/Srishtik-ui/fine-tuning-qwen-0.6B" target="_blank" class="link-btn">
+              <svg viewBox="0 0 256 256"><path d="M208.31,75.68A59.78,59.78,0,0,0,202.93,28,8,8,0,0,0,196,24a59.75,59.75,0,0,0-48,24H124A59.75,59.75,0,0,0,76,24a8,8,0,0,0-6.93,4,59.78,59.78,0,0,0-5.38,47.68A58.14,58.14,0,0,0,56,104v8a56.06,56.06,0,0,0,48.44,55.47A39.8,39.8,0,0,0,96,192v8H72a24,24,0,0,1-24-24A40,40,0,0,0,8,136a8,8,0,0,0,0,16,24,24,0,0,1,24,24,40,40,0,0,0,40,40H96v16a8,8,0,0,0,16,0V192a24,24,0,0,1,48,0v40a8,8,0,0,0,16,0V192a39.8,39.8,0,0,0-8.44-24.53A56.06,56.06,0,0,0,216,112v-8A58.14,58.14,0,0,0,208.31,75.68ZM200,112a40,40,0,0,1-40,40H112a40,40,0,0,1-40-40v-8a41.74,41.74,0,0,1,6.9-22.48A8,8,0,0,0,80,73.83a43.81,43.81,0,0,1,.79-33.58,43.88,43.88,0,0,1,32.32,20.06A8,8,0,0,0,119.82,64h32.35a8,8,0,0,0,6.74-3.69,43.87,43.87,0,0,1,32.32-20.06A43.81,43.81,0,0,1,192,73.83a8.09,8.09,0,0,0,1,7.65A41.72,41.72,0,0,1,200,104Z"></path></svg>
+              GitHub Repository
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-header">
+            <h3 class="project-title">Loan Approval Prediction System</h3>
+            <span class="project-subtitle">ISOEH Certification • Scikit-learn • SMOTE • Streamlit</span>
+          </div>
+          <p class="project-desc">
+            End-to-end loan approval classification system featuring EDA, missing-value treatment, SMOTE oversampling, and model evaluation.
+          </p>
+          <ul class="project-bullets">
+            <li>Handled imbalanced dataset using Synthetic Minority Over-sampling Technique (SMOTE).</li>
+            <li>Evaluated classifiers (Random Forest, Decision Trees, Logistic Regression) to deploy the top performer.</li>
+          </ul>
+          <div class="project-tech-stack">
+            <span class="badge-tag">Python</span>
+            <span class="badge-tag">Scikit-learn</span>
+            <span class="badge-tag">SMOTE</span>
+            <span class="badge-tag">Streamlit</span>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education & <span class="gradient-text">Certifications</span></h2>
-            
-            <div class="education-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <h3>B.Tech in Computer Science & Engineering (Data Science)</h3>
-                        <h4>Haldia Institute of Technology (Autonomous)</h4>
-                        <span class="timeline-date">2023 - 2027</span>
-                        <p class="timeline-gpa">YGPA: 7.87/10</p>
-                        <div class="coursework">
-                            <h5>Relevant Coursework</h5>
-                            <div class="course-tags">
-                                <span>Machine Learning</span>
-                                <span>Artificial Intelligence</span>
-                                <span>Data Structures & Algorithms</span>
-                                <span>Database Management Systems</span>
-                                <span>Probability & Statistics</span>
-                                <span>Linear Algebra</span>
-                                <span>Operating Systems</span>
-                                <span>Data Mining</span>
-                                <span>Big Data Analytics</span>
-                                <span>Computer Networks</span>
-                            </div>
-                        </div>
-                        <div class="academic-highlights">
-                            <ul>
-                                <li>Strong foundation in mathematical concepts essential for ML/AI</li>
-                                <li>Hands-on experience with modern data science frameworks and tools</li>
-                                <li>Project-based learning with real-world problem-solving</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Education & Achievements Section -->
+    <section id="education">
+      <div>
+        <p class="section-subtitle">Background</p>
+        <h2 class="section-title">Education &amp; Experience</h2>
+      </div>
 
-            <!-- Certifications -->
-            <div class="certifications">
-                <h3 class="subsection-title">Certifications & Online Learning</h3>
-                <div class="cert-grid">
-                    <div class="cert-card">
-                        <i class="fas fa-certificate"></i>
-                        <h4>Machine Learning Specialization</h4>
-                        <p>Ongoing - Coursera</p>
-                    </div>
-                    <div class="cert-card">
-                        <i class="fas fa-certificate"></i>
-                        <h4>Python for Data Science</h4>
-                        <p>Completed</p>
-                    </div>
-                    <div class="cert-card">
-                        <i class="fas fa-certificate"></i>
-                        <h4>SQL for Data Analysis</h4>
-                        <p>Completed</p>
-                    </div>
-                    <div class="cert-card">
-                        <i class="fas fa-certificate"></i>
-                        <h4>Git & GitHub</h4>
-                        <p>Completed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="timeline-card">
+        <span class="timeline-date">August 2023 – July 2027</span>
+        <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering (Data Science)</h3>
+        <p class="timeline-institution">Haldia Institute of Technology (Autonomous) • CGPA: 8.00 / 10.00</p>
+        <p class="project-desc">
+          Relevant Coursework: Data Structures &amp; Algorithms, DBMS, Machine Learning, Artificial Intelligence, Operating Systems, OOP, Probability &amp; Statistics, Data Visualization.
+        </p>
+      </div>
+
+      <div class="timeline-card">
+        <span class="timeline-date">January 2026 – February 2026</span>
+        <h3 class="timeline-title">ISOEH - Advanced Python &amp; Cloud Security</h3>
+        <p class="timeline-institution">Hands-on Training in ML, Data Analysis, and Cloud Security</p>
+      </div>
+
+      <div class="timeline-card">
+        <span class="timeline-date">Position of Responsibility</span>
+        <h3 class="timeline-title">Public Relations Head — DSCH</h3>
+        <p class="timeline-institution">Haldia Institute of Technology</p>
+        <p class="project-desc">
+          Led public relations efforts for the club, managing external communication and outreach initiatives for campus technical events.
+        </p>
+      </div>
     </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & <span class="gradient-text">Extracurriculars</span></h2>
-            
-            <div class="achievements-grid">
-                <!-- DSCH Role -->
-                <div class="achievement-card highlight">
-                    <div class="achievement-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Public Relations Member</h3>
-                    <h4>Data Science Club - DSCH, HIT</h4>
-                    <p>Leading outreach initiatives, organizing technical workshops, and coordinating events to promote data science awareness on campus. Responsible for community engagement and building connections with industry professionals.</p>
-                    <ul class="achievement-details">
-                        <li>Coordinated 5+ technical workshops and guest lectures</li>
-                        <li>Managed social media presence and content strategy</li>
-                        <li>Facilitated collaboration between students and industry mentors</li>
-                    </ul>
-                </div>
-
-                <!-- Nivedita Club -->
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-hands-helping"></i>
-                    </div>
-                    <h3>Active Member</h3>
-                    <h4>Nivedita Club, HIT</h4>
-                    <p>Contributing to social welfare initiatives and community development programs while balancing technical pursuits with social responsibility.</p>
-                </div>
-
-                <!-- GitHub Activity -->
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <h3>Active GitHub Contributor</h3>
-                    <h4>Open Source Enthusiast</h4>
-                    <p>Maintaining a consistent GitHub presence with 1000+ commits, showcasing ML projects and contributing to the data science community.</p>
-                    <a href="https://github.com/Srishtik-ui" target="_blank" class="achievement-link">
-                        <i class="fas fa-external-link-alt"></i> View GitHub Profile
-                    </a>
-                </div>
-
-                <!-- Technical Writing -->
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-pen"></i>
-                    </div>
-                    <h3>Technical Content Creator</h3>
-                    <h4>Blog & Documentation</h4>
-                    <p>Writing technical articles to share knowledge and explain complex ML concepts in accessible language (see Blog section).</p>
-                </div>
-            </div>
-
-
-        </div>
+    <!-- Contact & Footer -->
+    <section id="contact">
+      <footer class="footer-container">
+        <p>Built with precision &bull; Srishti Kumari &copy; 2026</p>
+        <p style="margin-top: 0.5rem;">Kolkata, India &bull; <a href="mailto:srishtik717@gmail.com" style="color: var(--text-primary); text-decoration: underline;">srishtik717@gmail.com</a></p>
+      </footer>
     </section>
+  </main>
 
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-            <p class="section-subtitle">I'm actively seeking internships and entry-level opportunities in Data Science and Machine Learning. Let's connect!</p>
-            
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <a href="mailto:srishtik717@gmail.com">srishtik717@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h4>LinkedIn</h4>
-                            <a href="https://www.linkedin.com/in/srishti-kumari-60a8502a6/" target="_blank">Connect with me</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h4>GitHub</h4>
-                            <a href="https://github.com/Srishtik-ui" target="_blank">@Srishtik-ui</a>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Haldia, West Bengal, India</p>
-                        </div>
-                    </div>
-                    
-                    <div class="resume-download">
-                        <a href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link" class="btn btn-primary" id="downloadResume" target="_blank">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
-                    </div>
-                </div>
-
-                <div class="contact-form-container">
-                    <h3>Send a Message</h3>
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required placeholder="Internship Opportunity / Project Collaboration">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Srishti Kumari</h3>
-                    <p>Data Science & Machine Learning Enthusiast</p>
-                    <div class="footer-social">
-                        <a href="https://github.com/Srishtik-ui" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/srishti-kumari-60a8502a6/" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="mailto:srishti717@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#achievements">Achievements</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Srishti Kumari. Built with passion for Data Science & Machine Learning.</p>
-                <p class="footer-note">Open to internship and collaboration opportunities</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
