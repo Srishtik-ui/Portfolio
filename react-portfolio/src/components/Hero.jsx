@@ -61,7 +61,7 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <a
-            href="https://drive.google.com/file/d/1IrefnSfH-9rTfAEuNLmvOL9fYTDT7Y8V/view?usp=drive_link"
+            href="https://docs.google.com/document/d/1JU8STW-zW1ZDaHKKKeJEZuQUtAxLnJ-W/edit?usp=drive_link&ouid=115081254599387043400&rtpof=true&sd=true"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center justify-center gap-2 h-10 px-5 rounded-md text-sm font-semibold border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-all shadow-sm active:scale-95"
